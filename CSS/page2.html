@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>cách định nghĩa css cho 1 thẻ (selector)</title>
-	<style>
-		p {
-			color: red;
-		}
+    <title>Cách định nghĩa CSS cho 1 thẻ (Selector)</title>
+    <style>
+        /***
+            Selector: (chọn thẻ HTML cần định nghĩa)
+                - tên thẻ Ex: div {
+                    thuộc tính css
+                };
 
-		#test {
-			color: green;
-		}
+                - Class name Ex: .text {
+                    thuộc tính css
+                }
 
-		.blue {
-			color: blue;
-		}
-		a[href="test1"] {
-			color: yellow;
-		}
-	</style>
+                - ID name Ex: #text {
+                    thuộc tính css
+                }
+                
+                - Thuộc tính của thẻ
+                    a[href="test"] {
+                        thuộc tính của thẻ
+                    }
+
+        */
+
+        p {
+            color: red;         
+        }
+
+        #test {
+            color: red;         
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        a[href="test"] {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-	<p>Đây là thẻ p 01</p>
-	<p>Đây là thẻ p 02</p>
-	<h4 class="blue">Đây là h4</h4>
-	<a href="test1">Go 1 to</a>
-	<a href="">Go to</a>
-	<div id="test">dd</div>
+    <p>Đây là thẻ P 01</p>
+    <p>Đây là thẻ P 02</p>
+    <h4 class="blue">Đây là thẻ h4</h4>
+    <a href="test">Go to Google</a>
+    <a href="">Go to Google</a>
+    <div id="test">Học lập trình tại suntech việt nam</div>
 </body>
 </html>
