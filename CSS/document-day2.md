@@ -113,3 +113,4 @@ Cách định nghĩa ngắn gọn
 
 - clear: left | right | both
 
+*HOMEWORK: Dùng html5 hoặc thẻ div, thanh menu dùng thẻ ul

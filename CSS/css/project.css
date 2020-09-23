@@ -7,7 +7,7 @@
 sale-up .sale-up-info{
 	width: 100%;
 	height: auto;
-	background: url(../images/res1.jpg) no-repeat right;
+	background: url(/images/res1.jpg) no-repeat right;
 	background-attachment: fixed;
 }
 
