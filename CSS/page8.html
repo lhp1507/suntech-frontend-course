@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex box</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			width: 900px;
+			margin: 0px auto;
+			background: #ccc;
+			padding: 10px;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.container div {
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+
+		.box1 {
+			flex: 1 1 auto;
+		}
+		.box2 {
+			flex: 2 2 auto;
+		}
+		.box3 {
+			flex: 1 1 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+	</div>
+</body>
+</html>
