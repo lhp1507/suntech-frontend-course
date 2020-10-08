@@ -58,26 +58,26 @@ header .container .shopping {
   margin-right: 20px;
 }
 
-slider {
-  max-height: 120px;
+slider,
+slider .container.slider,
+slider .container.slider .slide-item {
+  max-height: 180px;
 }
 
 slider .container.slider .slide-item h2 {
   left: 0px;
-  top: 17%;
-}
-slider .container.slider .slide-item h2 > span {
-  margin-bottom: -15px;
+  top: 110px;
 }
 slider .container.slider .slide-item h2 > span,
 slider .container.slider .slide-item h2 > small {
   font-size: 15px;
   margin-left: 25px;
   letter-spacing: 2px;
+  padding-top: 0px;
 }
 
 best-seller {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 best-seller ul {
   flex-wrap: wrap;
@@ -119,22 +119,19 @@ best-seller ul li:first-child small {
 }
 best-seller ul li:first-child p {
   font-size: 12px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 best-seller ul li .action {
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 0px;
 }
 
 shipping {
   margin-top: 50px;
-  min-height: 200px;
+  height: auto;
 }
 
-shipping .container {
-  min-height: 200px;
-}
 shipping ul {
   flex-wrap: wrap;
 }
@@ -183,7 +180,8 @@ featured-products ul li {
   margin-left: 3px;
   margin-right: 3px;
   min-height: 170px;
-  padding-top: 30px;
+  padding: 0px;
+  margin-top: 30px;
 }
 
 featured-products ul li img {
@@ -201,8 +199,13 @@ featured-products ul li p {
   padding-top: 5px;
 }
 
+featured-products ul li .action {
+  right: 0px;
+}
+
 discount-brand {
   height: auto;
+  margin-top: 30px;
 }
 discount-brand .container {
   flex-wrap: wrap;
@@ -277,6 +280,7 @@ footer .copyright p {
 
 footer .payment {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 footer .payment ul {

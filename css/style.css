@@ -107,13 +107,13 @@ header .container .shopping .wrap a.cart > small {
   background: #3cb878;
   color: #fff;
   border-radius: 50%;
-  line-height: 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 10px;
   top: -12px;
   right: -12px;
+  padding-top: 3px;
 }
 
 header .container .shopping .wrap a.search {
@@ -127,28 +127,29 @@ header .container .shopping .wrap a.more {
 /* SLIDER */
 slider {
   width: 100%;
-  height: 560px;
+  max-height: 560px;
   display: block;
 }
 
 slider .container.slider {
   width: 100%;
+  max-height: 560px;
 }
 
 slider .container.slider .slide-item {
   width: 100%;
+  max-height: 560px;
 }
 
-slider .container.slider .slide-item > img {
+slider .container.slider .slide-item img {
   max-width: 100%;
   height: auto;
   position: relative;
 }
 
 slider .container.slider .slide-item h2 {
-  line-height: 42px;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 10%;
 }
 
@@ -168,7 +169,7 @@ slider .container.slider .slide-item h2 > span {
 
 slider .container.slider .slide-item h2 > small {
   color: #3cb878;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 /* BEST SELLER */
@@ -207,7 +208,6 @@ best-seller ul li > a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
   display: block;
   padding-top: 20px;
 }
@@ -218,7 +218,6 @@ best-seller ul li > p {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 18px;
   padding-top: 15px;
 }
 
@@ -259,8 +258,8 @@ best-seller ul li:hover .action {
 
 best-seller ul li .action {
   position: absolute;
-  top: 10px;
-  right: 40px;
+  top: 0px;
+  right: 30px;
   display: none;
 }
 
@@ -313,7 +312,6 @@ shipping ul li h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 18px;
 }
 
 shipping ul li small {
@@ -322,7 +320,6 @@ shipping ul li small {
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
-  line-height: 13px;
 }
 
 /* PROMOTION */
@@ -373,7 +370,6 @@ featured-products > h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
 }
 
 featured-products > small {
@@ -383,7 +379,6 @@ featured-products > small {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
-  line-height: 14px;
   margin-top: 10px;
 }
 
@@ -401,6 +396,7 @@ featured-products ul li {
   min-height: 200px;
   width: 20%;
   padding: 0px 30px 80px 30px;
+  position: relative;
 }
 
 featured-products ul li img {
@@ -414,7 +410,6 @@ featured-products ul li a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
   padding-top: 20px;
 }
 
@@ -424,8 +419,36 @@ featured-products ul li p {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 18px;
   padding-top: 15px;
+}
+
+/* ** ACTION ** */
+featured-products ul li:hover .action {
+  display: block;
+}
+
+featured-products ul li .action {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  display: none;
+}
+featured-products ul li .action a {
+  background: url(../images/compare.png) no-repeat top;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  background-position: -8px -8px;
+}
+
+featured-products ul li .action a.heart {
+  background-position: -8px -58px;
+}
+
+featured-products ul li .action a.compare {
+  background-position: -8px -108px;
 }
 
 /* DISCOUNT & BRAND */
@@ -459,7 +482,6 @@ discount-brand .discount h3 span {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
   letter-spacing: 2px;
 }
 
@@ -468,7 +490,6 @@ discount-brand .discount h3 small {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
-  line-height: 25px;
   margin-top: 10px;
   padding: 0px 100px;
 }
@@ -493,7 +514,6 @@ discount-brand .discount form button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 45px;
   color: #ffffff;
   background: #3cb878;
   border: none;
@@ -547,8 +567,8 @@ footer .copyright p {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 55px;
   text-align: center;
+  padding-top: 20px;
 }
 
 /* ** PAYMENT ** */
