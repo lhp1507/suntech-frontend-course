@@ -150,7 +150,8 @@ slider .container.slider .slide-item img {
 slider .container.slider .slide-item h2 {
   position: absolute;
   top: 40%;
-  left: 10%;
+  left: 25%;
+  transform: translate(-10px, 10px);
 }
 
 slider .container.slider .slide-item h2 > span,
