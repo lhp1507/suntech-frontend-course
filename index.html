@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Shop - Final frontend project</title>
+
+    <!-- CSS -->
+    <!---- style ---->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!---- responsive ---->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/kdu4dox.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Phần menu -->
+    <menu>
+      <!-- Logo -->
+      <div class="menu__logo">
+        <img src="./images/logo-suntech.jpg" alt="logo-suntech" />
+      </div>
+      <!-- Menu điều hướng -->
+      <div class="menu__dir">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Jewellery</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
+      <div class="menu__right">
+        <ul>
+          <li>
+            <span class="cart">
+              <small class="cart-number">3</small>
+            </span>
+          </li>
+          <li>
+            <span class="search"></span>
+          </li>
+          <li>
+            <span class="burger"></span>
+          </li>
+        </ul>
+      </div>
+    </menu>
+
+    <!-- Phần slider -->
+    <slider>
+      <!-- Chữ hiển thị trên slider -->
+      <div class="slider__content">
+        <span>The best</span>
+        <small>Woocommerce</small>
+      </div>
+      <!-- Khung bao phần chứa ảnh -->
+      <div class="slider__images">
+        <img src="./images/slider-1.jpg" alt="slider-1" />
+        <img src="./images/slider-2.jpg" alt="slider-2" />
+        <img src="./images/slider-3.jpg" alt="slider-3" />
+        <img src="./images/slider-4.jpg" alt="slider-4" />
+        <img src="./images/slider-5.jpg" alt="slider-5" />
+      </div>
+    </slider>
+
+    <!-- Phần Best sellers -->
+    <best-seller>
+      <!-- Title -->
+      <div class="best-seller__title">
+        <div class="text">
+          <h3>Best sellers</h3>
+          <small>The best productions from us</small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <!-- Sản phẩm best sellers
+            Kích thước ảnh sản phẩm: 300px x 450px -->
+      <div class="best-seller__products">
+        <ul>
+          <!-- 01 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/best-seller-1.jpg" alt="best-seller-1" />
+              <a class="name" href="./images/best-seller-1.jpg"
+                >Cruise Dual Analog</a
+              >
+              <p class="price">$250.00</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 02 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/best-seller-2.jpg" alt="best-seller-2" />
+              <a class="name" href="./images/best-seller-2.jpg"
+                >Crown Summit T-shirt</a
+              >
+              <p class="price">$250.00</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 03 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/best-seller-3.jpg" alt="best-seller-3" />
+              <a class="name" href="./images/best-seller-3.jpg"
+                >Vintas Bleached Sand - Low top</a
+              >
+              <p class="price">465.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 04 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/best-seller-4.jpg" alt="best-seller-4" />
+              <a class="name" href="./images/best-seller-4.jpg"
+                >Ananas x Lucky Luke Pattas - High top</a
+              >
+              <p class="price">850.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </best-seller>
+
+    <!-- Static-blocks -->
+    <static-blocks>
+      <div class="item">
+        <div class="special-offers">
+          <span class="diamond"></span>
+          <h3>Special Offers</h3>
+          <p>Shop Big Save Big</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="free-delivery">
+          <span class="plane"></span>
+          <h3>Free Delivery</h3>
+          <p>On Orders Above $99</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="return-policy">
+          <span class="return"></span>
+          <h3>30 Days Return</h3>
+          <p>Policy We Offers</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fastest-shipping">
+          <span class="rocket"></span>
+          <h3>Fastest Shipping</h3>
+          <p>2 Days Express</p>
+        </div>
+      </div>
+    </static-blocks>
+
+    <!-- Categories 640px x 640px -->
+    <categories>
+      <div>
+        <span class="summer-autumn__image"></span>
+      </div>
+      <div class="center">
+        <span class="fashion-for-men__image"></span>
+      </div>
+      <div>
+        <span class="new-fashion-styles__image"></span>
+      </div>
+    </categories>
+
+    <!-- Products List -->
+    <products-list>
+      <div class="products-list__title">
+        <h3>Featured Products</h3>
+        <small>Newest trends from top brands</small>
+      </div>
+      <!-- ảnh: w x h = 300px x 450px -->
+      <div class="products-list__products">
+        <ul>
+          <!-- 01 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-1.jpg" alt="future-product-1" />
+              <a class="name" href="./images/future-product-1.jpg"
+                >Cruise Dual Analog</a
+              >
+              <p class="price">$850.00</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 02 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-2.jpg" alt="future-product-2" />
+              <a class="name" href="./images/future-product-2.jpg"
+                >Ananas x T-shirt</a
+              >
+              <p class="price">450.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 03 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-3.jpg" alt="future-product-3" />
+              <a class="name" href="./images/future-product-3.jpg"
+                >Ananas x T-shirt</a
+              >
+              <p class="price">450.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 04 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-4.jpg" alt="future-product-4" />
+              <a class="name" href="./images/future-product-4.jpg"
+                >Ananas x Hart</a
+              >
+              <p class="price">300.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 05 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-5.jpg" alt="future-product-5" />
+              <a class="name" href="./images/future-product-5.jpg"
+                >Ananas x T-shirt</a
+              >
+              <p class="price">450.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 06 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-6.jpg" alt="future-product-6" />
+              <a class="name" href="./images/future-product-6.jpg"
+                >Ananas x Sock</a
+              >
+              <p class="price">50.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 07 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-7.jpg" alt="future-product-7" />
+              <a class="name" href="./images/future-product-7.jpg"
+                >Ananas x T-shirt</a
+              >
+              <p class="price">450.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 08 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-8.jpg" alt="future-product-8" />
+              <a class="name" href="./images/future-product-8.jpg"
+                >Ananas x Hoodies</a
+              >
+              <p class="price">950.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 09 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img src="./images/future-product-9.jpg" alt="future-product-9" />
+              <a class="name" href="./images/future-product-9.jpg"
+                >Ananas x Backpack</a
+              >
+              <p class="price">450.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+          <!-- 10 -->
+          <li>
+            <!-- Thông tin sản phẩm -->
+            <div class="detail">
+              <img
+                src="./images/future-product-10.jpg"
+                alt="future-product-10"
+              />
+              <a class="name" href="./images/future-product-10.jpg"
+                >Ananas x Tee</a
+              >
+              <p class="price">25.000 VND</p>
+            </div>
+            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+            <div class="hover">
+              <span class="cart"></span>
+              <span class="like"></span>
+              <span class="compare"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </products-list>
+
+    <!-- Clients -->
+    <subcribe-clients>
+      <!-- width 50% -->
+      <div class="subcribe">
+        <h3>Get Out Special Discount</h3>
+        <p>
+          Donec eu tristique felis. Duis augue mi, auctor ut purus et, dignissim
+          aliquet quam. <br />
+          Register your email for news and special offers
+        </p>
+        <form action="" method="POST">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail address..."
+            required
+          />
+          <button type="submit" class="btn-submit">GET COUPON NOW</button>
+        </form>
+      </div>
+      <!-- width 50% -->
+      <div class="clients">
+        <ul>
+          <li><span class="brand-logo-1"></span></li>
+          <li><span class="brand-logo-2"></span></li>
+          <li><span class="brand-logo-3"></span></li>
+          <li><span class="brand-logo-4"></span></li>
+        </ul>
+      </div>
+    </subcribe-clients>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright-text">
+        <p>
+          Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios
+        </p>
+      </div>
+      <div class="cards">
+        <ul>
+          <li><span class="visa"></span></li>
+          <li><span class="paypal"></span></li>
+          <li><span class="amazon"></span></li>
+          <li><span class="maestro"></span></li>
+          <li><span class="amex"></span></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

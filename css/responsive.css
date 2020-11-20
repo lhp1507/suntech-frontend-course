@@ -1,0 +1,1013 @@
+/* =====
+    CSS responsive cho các thiết bị
+===== */
+
+/* ----- Laptop L - 1440px ----- */
+@media only screen and (max-width: 1439px) {
+  a.name {
+    margin-top: 1rem;
+  }
+
+  /* MENU */
+  menu {
+    height: 8rem;
+  }
+  menu .menu__logo {
+    margin-left: 5rem;
+  }
+  menu .menu__right {
+    margin-right: 5rem;
+  }
+
+  /* SLIDER */
+  slider,
+  slider .slider__images {
+    max-height: 70rem;
+  }
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 4.5rem;
+    letter-spacing: 0.7rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  best-seller .best-seller__title {
+    margin-left: 4rem;
+  }
+  best-seller .best-seller__title .text {
+    padding: 0rem 1rem;
+  }
+  best-seller .best-seller__products {
+    margin-right: 4rem;
+  }
+  best-seller .best-seller__products ul li .hover {
+    top: 2%;
+    left: 80%;
+    transform: translate(5px, -5px);
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    height: 18rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 48rem;
+  }
+  categories div span {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list {
+    padding: 7rem 4rem;
+  }
+  products-list .products-list__products ul li .hover {
+    top: 2%;
+    left: 80%;
+    transform: translate(5px, -2px);
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients {
+    height: 20rem;
+  }
+  subcribe-clients .subcribe h3 {
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  subcribe-clients .subcribe p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.6rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0rem 20rem;
+  }
+}
+
+/* ----- 1200px ----- */
+@media only screen and (max-width: 1199px) {
+  a.name {
+    font-size: 1.4rem;
+  }
+  p.price {
+    font-size: 1.6rem;
+  }
+
+  /* SLIDER */
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  best-seller .best-seller__title {
+    margin-left: 3rem;
+  }
+  best-seller .best-seller__title .text {
+    padding: 0rem 0.7rem 0rem 0rem;
+  }
+  best-seller .best-seller__title .text h3 {
+    font-size: 2.5rem;
+  }
+  best-seller .best-seller__title .text small {
+    font-size: 1.2rem;
+  }
+  best-seller .best-seller__title .text p {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+  }
+  best-seller .best-seller__products {
+    margin-right: 3rem;
+  }
+  best-seller .best-seller__products ul li {
+    width: 24%;
+  }
+  best-seller .best-seller__products ul li .detail img {
+    height: 40rem;
+  }
+
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(2px, -5px);
+  }
+  best-seller .best-seller__products ul li .hover span {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  best-seller .best-seller__products ul li .hover span.cart {
+    background-position: -0.3rem -0.2rem;
+  }
+  best-seller .best-seller__products ul li .hover span.like {
+    background-position: -0.3rem -5.2rem;
+  }
+  best-seller .best-seller__products ul li .hover span.compare {
+    background-position: -0.3rem -10.2rem;
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    height: 16rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.6rem;
+  }
+  static-blocks .item div p {
+    font-size: 1.2rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 40rem;
+  }
+  categories div span {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list {
+    padding: 6rem 3rem;
+  }
+  products-list .products-list__title h3 {
+    font-size: 2.7rem;
+  }
+  products-list .products-list__title small {
+    font-size: 1.4rem;
+  }
+  products-list .products-list__products ul li {
+    margin-top: 3rem;
+    width: 19.2%;
+  }
+  products-list .products-list__products ul li .detail img {
+    height: 40rem;
+  }
+  products-list .products-list__products ul li .hover {
+    top: 2%;
+    left: 80%;
+    transform: translate(5px, -5px);
+  }
+  products-list .products-list__products ul li .hover span {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  products-list .products-list__products ul li .hover span.cart {
+    background-position: -0.3rem -0.2rem;
+  }
+  products-list .products-list__products ul li .hover span.like {
+    background-position: -0.3rem -5.2rem;
+  }
+  products-list .products-list__products ul li .hover span.compare {
+    background-position: -0.3rem -10.2rem;
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients {
+    height: 18rem;
+  }
+  subcribe-clients .subcribe h3 {
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 2.3rem;
+  }
+  subcribe-clients .subcribe p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.5rem;
+  }
+  subcribe-clients .clients ul li span {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0rem 15rem;
+    height: 4.5rem;
+  }
+  footer .copyright-text p {
+    font-size: 1.3rem;
+  }
+  footer .cards ul li {
+    width: 4rem;
+  }
+  footer .cards ul li span {
+    width: 4rem;
+  }
+}
+
+/* ----- Laptop - 1024px ----- */
+@media only screen and (max-width: 1023px) {
+  a.name {
+    font-size: 1.3rem;
+  }
+  p.price {
+    font-size: 1.5rem;
+  }
+
+  /* MENU */
+  menu {
+    height: 7rem;
+  }
+  menu .menu__logo {
+    margin-left: 6rem;
+  }
+  menu .menu__dir ul li a {
+    font-size: 1.3rem;
+    margin: 0px 15px;
+  }
+  menu .menu__right {
+    margin-right: 6rem;
+  }
+
+  /* SLIDER */
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    flex-direction: column;
+  }
+  best-seller .best-seller__title {
+    width: 100%;
+    height: 12rem;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  best-seller .best-seller__title .text {
+    width: 50%;
+    padding: 0rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  best-seller .best-seller__title .text p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  best-seller .best-seller__products {
+    display: block;
+    margin-right: 0rem;
+    padding: 1rem 1rem 0rem 1rem;
+    width: 100%;
+  }
+  best-seller .best-seller__products ul li {
+    width: 24.5%;
+  }
+  best-seller .best-seller__products ul li .detail img {
+    height: 35rem;
+  }
+
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(8px, -3px);
+  }
+  best-seller .best-seller__products ul li .hover span {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  best-seller .best-seller__products ul li .hover span.cart {
+    background-position: -0.3rem -0.2rem;
+  }
+  best-seller .best-seller__products ul li .hover span.like {
+    background-position: -0.3rem -5.2rem;
+  }
+  best-seller .best-seller__products ul li .hover span.compare {
+    background-position: -0.3rem -10.2rem;
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    height: 14rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.4rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 35rem;
+  }
+  categories div span {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list {
+    padding: 5rem 2rem;
+  }
+  products-list .products-list__title h3 {
+    font-size: 2.5rem;
+  }
+  products-list .products-list__title small {
+    font-size: 1.3rem;
+  }
+  products-list .products-list__products ul {
+    justify-content: flex-start;
+  }
+  products-list .products-list__products ul li {
+    width: 23.9%;
+    margin-right: 1rem;
+  }
+  products-list .products-list__products ul li .detail img {
+    height: 35rem;
+  }
+  products-list .products-list__products ul li .hover {
+    top: 2%;
+    left: 80%;
+    transform: translate(5px, -2px);
+  }
+  products-list .products-list__products ul li .hover span {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  products-list .products-list__products ul li .hover span.cart {
+    background-position: -0.3rem -0.2rem;
+  }
+  products-list .products-list__products ul li .hover span.like {
+    background-position: -0.3rem -5.2rem;
+  }
+  products-list .products-list__products ul li .hover span.compare {
+    background-position: -0.3rem -10.2rem;
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients {
+    height: 15rem;
+  }
+  subcribe-clients .subcribe h3 {
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+  }
+  subcribe-clients .subcribe p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  subcribe-clients .subcribe form {
+    margin-top: 1.5rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    width: 25rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.4rem;
+    width: 17rem;
+    height: 4rem;
+  }
+  subcribe-clients .clients ul li span {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0rem 10rem;
+    height: 4rem;
+  }
+  footer .copyright-text p {
+    font-size: 1.3rem;
+  }
+  footer .cards ul li {
+    width: 4rem;
+  }
+  footer .cards ul li span {
+    width: 4rem;
+  }
+}
+
+/* ----- Tablet - 768px ----- */
+@media only screen and (max-width: 767px) {
+  a.name {
+    font-size: 1.2rem;
+  }
+  p.price {
+    font-size: 1.4rem;
+    margin-top: 0rem;
+  }
+
+  /* MENU */
+  menu {
+    height: 6rem;
+  }
+  menu .menu__logo {
+    margin-left: 3rem;
+  }
+  menu .menu__dir ul li a {
+    font-size: 1.2rem;
+    margin: 0px 10px;
+  }
+  menu .menu__right {
+    margin-right: 3rem;
+  }
+
+  /* SLIDER */
+  slider .slider__content {
+    left: 8%;
+  }
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+  }
+  best-seller .best-seller__title {
+    width: 100%;
+    height: 13rem;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  best-seller .best-seller__title .text {
+    width: 70%;
+    padding: 0rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  best-seller .best-seller__title .text h3 {
+    font-size: 2.5rem;
+  }
+  best-seller .best-seller__title .text small {
+    font-size: 1.3rem;
+  }
+  best-seller .best-seller__title .text p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  best-seller .best-seller__products {
+    margin-right: 0rem;
+    padding: 0.5rem 1rem 0rem 1rem;
+  }
+  best-seller .best-seller__products ul li {
+    width: 24.5%;
+  }
+  best-seller .best-seller__products ul li .detail img {
+    height: 30rem;
+  }
+
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(2px, -2px);
+  }
+  best-seller .best-seller__products ul li .hover span {
+    width: 3rem;
+    height: 3rem;
+  }
+  best-seller .best-seller__products ul li .hover span.cart {
+    background-position: -0.5rem -0.5rem;
+  }
+  best-seller .best-seller__products ul li .hover span.like {
+    background-position: -0.5rem -5.5rem;
+  }
+  best-seller .best-seller__products ul li .hover span.compare {
+    background-position: -0.5rem -10.5rem;
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    height: 12rem;
+  }
+  static-blocks .item div span {
+    width: 3rem;
+    height: 3rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.3rem;
+  }
+  static-blocks .item div p {
+    font-size: 1.1rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 30rem;
+  }
+  categories div span {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list .products-list__title h3 {
+    font-size: 2.2rem;
+  }
+  products-list .products-list__products ul li {
+    width: 23.6%;
+  }
+  products-list .products-list__products ul li .detail img {
+    height: 30rem;
+  }
+  products-list .products-list__products ul li .hover {
+    transform: translate(0px, -3px);
+  }
+  products-list .products-list__products ul li .hover span {
+    width: 3rem;
+    height: 3rem;
+  }
+  products-list .products-list__products ul li .hover span.cart {
+    background-position: -0.5rem -0.5rem;
+  }
+  products-list .products-list__products ul li .hover span.like {
+    background-position: -0.5rem -5.5rem;
+  }
+  products-list .products-list__products ul li .hover span.compare {
+    background-position: -0.5rem -10.5rem;
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients {
+    height: auto;
+    flex-direction: column;
+  }
+  subcribe-clients .subcribe,
+  subcribe-clients .clients {
+    width: 100%;
+    height: 15rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    width: 30rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 4rem;
+    margin-left: 0rem;
+  }
+  subcribe-clients .clients ul li span {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0rem 4rem;
+    height: 4.5rem;
+  }
+  footer .copyright-text {
+    width: 60%;
+  }
+  footer .cards {
+    width: 40%;
+  }
+  footer .copyright-text p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ----- 480px ----- */
+@media only screen and (max-width: 479px) {
+  a.name {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
+  p.price {
+    font-size: 1.6rem;
+    margin-top: 0rem;
+  }
+
+  /* MENU */
+  menu {
+    height: 5rem;
+  }
+  menu .menu__logo,
+  menu .menu__right {
+    width: 50%;
+  }
+  menu .menu__dir {
+    display: none;
+  }
+
+  /* SLIDER */
+  slider .slider__content {
+    left: 3%;
+  }
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller {
+    margin-bottom: 4rem;
+  }
+  best-seller .best-seller__title .text {
+    width: 90%;
+  }
+  best-seller .best-seller__title .text small {
+    font-size: 1.2rem;
+  }
+  best-seller .best-seller__title .text p {
+    font-size: 1.3rem;
+  }
+  best-seller .best-seller__products {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  best-seller .best-seller__products ul {
+    flex-wrap: wrap;
+  }
+  best-seller .best-seller__products ul li {
+    width: 49%;
+    margin-top: 3rem;
+  }
+
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(11px, -3px);
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    height: 10rem;
+  }
+  static-blocks .item div span {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
+  }
+  static-blocks .item div p {
+    font-size: 1rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 20rem;
+  }
+  categories div span {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list {
+    padding: 4rem 1rem;
+  }
+  products-list .products-list__title h3 {
+    font-size: 2.5rem;
+  }
+  products-list .products-list__products ul li {
+    width: 47.8%;
+    margin-top: 2rem;
+  }
+  products-list .products-list__products ul li .hover {
+    transform: translate(10px, -3px);
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients {
+    height: auto;
+    flex-direction: column;
+  }
+  subcribe-clients .subcribe {
+    height: 20rem;
+  }
+  subcribe-clients .subcribe h3 {
+    letter-spacing: 0.2rem;
+    margin-top: 1.5rem;
+  }
+  subcribe-clients .subcribe p {
+    margin-top: 0.5rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    width: 33rem;
+    font-size: 1.4rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.4rem;
+    width: 17rem;
+    margin-top: 1rem;
+  }
+  subcribe-clients .clients {
+    height: 12rem;
+  }
+  subcribe-clients .clients ul li span {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0rem;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  footer .copyright-text,
+  footer .cards {
+    width: 100%;
+    height: 4rem;
+  }
+  footer .copyright-text {
+    text-align: center;
+  }
+  footer .copyright-text p {
+    width: 100%;
+    font-size: 1.35rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  footer .cards ul {
+    justify-content: center;
+  }
+  footer .cards ul li {
+    width: 4.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  footer .cards ul li span {
+    width: 4.5rem;
+  }
+}
+
+/* ----- Mobile L - 425px ----- */
+@media only screen and (max-width: 424px) {
+  p.price {
+    font-size: 1.5rem;
+  }
+
+  /* SLIDER */
+  slider .slider__content {
+    left: 4%;
+  }
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller .best-seller__title {
+    height: 12rem;
+  }
+  best-seller .best-seller__title .text {
+    width: 100%;
+  }
+  best-seller .best-seller__title .text p {
+    padding: 0rem 3rem;
+  }
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(7px, -4px);
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks .item div span {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.1rem;
+  }
+  static-blocks .item div p {
+    font-size: 0.9rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 17rem;
+  }
+  categories div span {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list {
+    padding: 4rem 0rem;
+  }
+  products-list .products-list__products {
+    padding-left: 1rem;
+  }
+  products-list .products-list__products ul li {
+    width: 47.5%;
+  }
+  products-list .products-list__products ul li .hover {
+    transform: translate(7px, -5px);
+  }
+
+  /* SUBCRIBE - CLIENTS */
+
+  subcribe-clients .subcribe h3 {
+    letter-spacing: 0.15rem;
+    font-size: 2rem;
+  }
+  subcribe-clients .subcribe p {
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+  }
+  subcribe-clients .subcribe p br {
+    display: none;
+  }
+  subcribe-clients .subcribe form {
+    margin-top: 2rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    width: 30rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    font-size: 1.4rem;
+    width: 17rem;
+    margin-top: 0.5rem;
+  }
+
+  /* FOOTER */
+  footer .copyright-text p {
+    font-size: 1.22rem;
+  }
+  footer .cards ul {
+    margin-top: 0.5rem;
+  }
+}
+
+/* ----- Mobile M - 375px ----- */
+@media only screen and (max-width: 374px) {
+  a.name {
+    font-size: 1.2rem;
+  }
+  p.price {
+    font-size: 1.4rem;
+  }
+
+  /* SLIDER */
+  slider .slider__content span,
+  slider .slider__content small {
+    font-size: 1.75rem;
+  }
+
+  /* BEST SELLERS */
+  best-seller .best-seller__title {
+    height: 12.5rem;
+  }
+  best-seller .best-seller__title .text p {
+    padding: 0rem 1.5rem;
+  }
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(2px, -5px);
+  }
+
+  /* STATIC BLOCKS */
+  static-blocks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 20rem;
+    justify-content: center;
+  }
+  static-blocks .item {
+    width: 49.5%;
+    height: auto;
+    margin: 0.05rem;
+  }
+  static-blocks .item div span {
+    width: 3rem;
+    height: 3rem;
+  }
+  static-blocks .item div h3 {
+    font-size: 1.45rem;
+  }
+  static-blocks .item div p {
+    font-size: 1.1rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 105rem;
+    flex-direction: column;
+  }
+  categories div span {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list .products-list__products {
+    margin-top: 0rem;
+  }
+  products-list .products-list__products ul li {
+    width: 47.2%;
+    margin-top: 3rem;
+  }
+  products-list .products-list__products ul li .hover {
+    transform: translate(2px, -4px);
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients .subcribe h3 {
+    margin-top: 1rem;
+  }
+  subcribe-clients .subcribe p {
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  subcribe-clients .clients {
+    height: 20rem;
+  }
+  subcribe-clients .clients ul {
+    flex-wrap: wrap;
+  }
+  subcribe-clients .clients ul li {
+    width: 50%;
+    height: auto;
+  }
+  subcribe-clients .clients ul li span {
+    width: 10rem;
+    height: 9rem;
+  }
+
+  /* FOOTER */
+  footer .copyright-text p {
+    font-size: 1.15rem;
+  }
+  footer .cards ul li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* ----- Mobile S - 320px ----- */
+/* @media only screen and (max-width: 319px) {
+} */
