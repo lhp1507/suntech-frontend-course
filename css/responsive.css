@@ -654,9 +654,41 @@
   menu .menu__right {
     width: 50%;
   }
+  menu .menu__right ul li span.burger {
+    display: block;
+  }
+  /* * For toggle * */
   menu .menu__dir {
     display: none;
   }
+  menu .menu__dir.active {
+    display: block;
+    width: 100%;
+  }
+  menu .menu__dir.active ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+    background: #f1f1f1;
+    text-align: left;
+    min-height: 10rem;
+    top: 5rem;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  menu .menu__dir.active ul li,
+  menu .menu__dir.active ul li a {
+    display: block;
+    width: 100%;
+  }
+  menu .menu__dir.active ul li a {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 3rem;
+    padding-left: 2rem;
+  }
+  /* *END for toggle* */
 
   /* SLIDER */
   slider .slider__content {
@@ -1009,5 +1041,63 @@
 }
 
 /* ----- Mobile S - 320px ----- */
-/* @media only screen and (max-width: 319px) {
-} */
+@media only screen and (max-width: 319px) {
+  /* BEST SELLERS */
+  best-seller .best-seller__title {
+    height: 14rem;
+  }
+  best-seller .best-seller__title .text p {
+    padding: 0rem 1rem;
+  }
+  best-seller .best-seller__products ul li .hover {
+    transform: translate(-4px, -3px);
+  }
+
+  /* STATIC-BLOCKS */
+  static-blocks .item div h3 {
+    font-size: 1.4rem;
+  }
+
+  /* CATEGORIES */
+  categories {
+    height: 100rem;
+  }
+  categories div span {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  /* PRODUCTS LIST */
+  products-list .products-list__products ul li {
+    width: 46.7%;
+    margin-top: 3rem;
+  }
+  products-list .products-list__products ul li .hover {
+    transform: translate(-4px, -3px);
+  }
+
+  /* SUBCRIBE - CLIENTS */
+  subcribe-clients .subcribe h3 {
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+  }
+  subcribe-clients .subcribe p {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+  }
+  subcribe-clients .subcribe form {
+    margin-top: 1rem;
+  }
+  subcribe-clients .subcribe form input#email {
+    width: 28rem;
+  }
+  subcribe-clients .subcribe form button.btn-submit {
+    width: 16rem;
+  }
+
+  /* FOOTER */
+  footer .copyright-text p {
+    padding: 0rem 2rem;
+  }
+}

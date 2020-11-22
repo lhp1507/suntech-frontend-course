@@ -58,6 +58,8 @@ p.price {
 menu {
   height: 10rem;
   display: flex;
+  z-index: 9999;
+  background-color: #fff;
 }
 /* LOGO */
 menu .menu__logo {
@@ -163,6 +165,7 @@ menu .menu__right ul li span.search {
 }
 menu .menu__right ul li span.burger {
   background-position: -9rem;
+  display: none;
 }
 
 /* CSS cho slider */
