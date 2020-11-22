@@ -1,709 +1,589 @@
-/* Cài đặt ban đầu cho trình duyệt */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-/*
-  1em = 1rem = 100% = 16px
-  Set ở thẻ <html> font-size 62.5%.
-  100% thì được 16px suy ra 62.5% thì được 10px.
-  ==> Lúc này 1em = 1rem = 10px
-*/
-html {
+body {
   font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
 }
 
-body {
-  max-width: 1920px;
+.container {
+  max-width: 1280px;
   margin: 0px auto;
 }
 
-menu,
-slider,
-best-seller,
-static-blocks,
-categories,
-products-list,
-subcribe-clients,
-footer {
+/* HEADER */
+header {
   width: 100%;
+  height: 100px;
 }
 
-img {
-  object-fit: cover;
-  max-width: 100%;
+header .container {
+  display: flex;
+  height: 100px;
+  align-items: center;
 }
 
-a {
+/* ** LOGO ** */
+header .container .logo {
+  width: 25%;
+  margin-left: 70px;
+}
+
+header .container .logo > a {
+  color: #3cb878;
+  text-transform: uppercase;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
   text-decoration: none;
 }
 
-a.name {
-  color: #333;
-  font: 600 1.6rem "Poppins", sans-serif;
-  margin-top: 2rem;
-  display: block;
+/* ** MENU ** */
+header .container .menu {
+  width: 50%;
 }
 
-p.price {
-  color: #3cb878;
-  font: normal 400 2rem "droid-serif", serif;
-  margin-top: 0.5rem;
-}
-
-/* CSS cho menu */
-menu {
-  height: 10rem;
-  display: flex;
-  z-index: 9999;
-  background-color: #fff;
-}
-/* LOGO */
-menu .menu__logo {
-  width: 20%;
-  height: 100%;
-  margin-left: 7rem;
-}
-menu .menu__logo img {
-  width: auto;
-  height: 100%;
-  cursor: pointer;
-}
-/* Thanh điều hướng */
-menu .menu__dir {
-  width: 60%;
-  position: relative;
-}
-
-menu .menu__dir ul {
-  width: 100%;
+header .container .menu > ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-menu .menu__dir ul li {
-  display: inline;
-}
-
-menu .menu__dir ul li a {
+header .container .menu > ul > li {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
+}
+
+header .container .menu > ul > li > a {
+  text-decoration: none;
   text-transform: uppercase;
   color: #3f4853;
-  margin: 0px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0px 20px 0px 20px;
 }
 
-menu .menu__dir ul li a.active {
+header .container .menu > ul > li > a.active {
   color: #3cb878;
 }
 
-menu .menu__dir ul li a:hover {
+header .container .menu > ul > li > a:hover {
   color: #3cb878;
 }
 
-/* Giỏ hàng bên phải */
-menu .menu__right {
-  width: 20%;
-  margin-right: 7rem;
+/* ** SHOPPING ** */
+header .container .shopping {
+  width: 25%;
+  margin-right: 70px;
 }
 
-menu .menu__right ul {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-menu .menu__right ul li {
-  display: inline-block;
+header .container .shopping .wrap {
+  float: right;
 }
 
-menu .menu__right ul li span {
+header .container .shopping .wrap a {
   background: url(../images/cart.png) no-repeat;
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  margin-left: 2rem;
-  cursor: pointer;
+  display: block;
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin-left: 30px;
+  text-decoration: none;
 }
 
-menu .menu__right ul li span.cart {
+header .container .shopping .wrap a.cart {
+  background-position: 2;
   position: relative;
 }
 
-menu .menu__right ul li span.cart small.cart-number {
-  font-size: 1rem;
+header .container .shopping .wrap a.cart > small {
   position: absolute;
-  width: 1.6rem;
-  height: 1.6rem;
+  height: 20px;
+  width: 20px;
   display: block;
   background: #3cb878;
   color: #fff;
   border-radius: 50%;
-  line-height: 1.6rem;
   text-align: center;
-  top: -1rem;
-  left: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  top: -12px;
+  right: -12px;
+  padding-top: 3px;
 }
 
-menu .menu__right ul li span.search {
-  background-position: -4.5rem;
-}
-menu .menu__right ul li span.burger {
-  background-position: -9rem;
-  display: none;
+header .container .shopping .wrap a.search {
+  background-position: -45px;
 }
 
-/* CSS cho slider */
+header .container .shopping .wrap a.more {
+  background-position: -90px;
+}
+
+/* SLIDER */
 slider {
-  height: auto;
-  max-height: 80rem;
+  width: 100%;
+  max-height: 560px;
   display: block;
+}
+
+slider .container.slider {
+  width: 100%;
+  max-height: 560px;
+}
+
+slider .container.slider .slide-item {
+  width: 100%;
+  max-height: 560px;
+}
+
+slider .container.slider .slide-item img {
+  max-width: 100%;
+  height: auto;
   position: relative;
 }
 
-slider .slider__content {
-  display: block;
+slider .container.slider .slide-item h2 {
   position: absolute;
-  top: 38%;
-  left: 12%;
-  z-index: 2;
+  top: 40%;
+  left: 10%;
 }
 
-slider .slider__content span,
-slider .slider__content small {
+slider .container.slider .slide-item h2 > span,
+slider .container.slider .slide-item h2 > small {
   text-transform: uppercase;
   display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 6rem;
-  letter-spacing: 1rem;
+  font-size: 42px;
+  letter-spacing: 5px;
 }
 
-slider .slider__content span {
-  color: #333;
+slider .container.slider .slide-item h2 > span {
+  color: #333333;
 }
 
-slider .slider__content small {
+slider .container.slider .slide-item h2 > small {
   color: #3cb878;
+  padding-top: 5px;
 }
 
-slider .slider__images {
-  display: flex;
-  width: 100%;
-  max-height: 80rem;
-  overflow-x: auto;
-  z-index: 1;
-}
-
-slider .slider__images img {
-  width: 100%;
-  flex-shrink: 0;
-  height: auto;
-}
-
-/* CSS cho Best sellers */
+/* BEST SELLER */
 best-seller {
-  min-height: 40rem;
-  display: flex;
-  margin-top: 9rem;
-  margin-bottom: 9rem;
+  display: block;
+  width: 100%;
+  margin-top: 100px;
 }
-
-best-seller .best-seller__title {
-  width: 20%;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  margin-left: 5.5rem;
-}
-
-best-seller .best-seller__title .text {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  padding: 0rem 1.5rem;
-}
-
-best-seller .best-seller__title .text h3 {
-  text-transform: uppercase;
-  color: #333;
-  font: 700 3rem "Poppins", sans-serif;
-}
-
-best-seller .best-seller__title .text small {
-  color: #3cb878;
-  font: italic 400 1.4rem "droid-serif", serif;
-}
-
-best-seller .best-seller__title .text p {
-  color: #333;
-  font: 500 1.6rem "Poppins", sans-serif;
-  margin-top: 3rem;
-}
-
-best-seller .best-seller__products {
-  width: 80%;
-  height: auto;
-  display: inline-block;
-  margin-right: 5.5rem;
-}
-
-best-seller .best-seller__products ul {
-  margin: 0rem;
-  padding: 0rem;
+best-seller ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-best-seller .best-seller__products ul li {
-  display: block;
-  width: 24.5%;
-  height: 100%;
+best-seller ul li {
+  width: 20%;
+  min-height: 200px;
+  margin-left: 15px;
   position: relative;
 }
 
-best-seller .best-seller__products ul li .detail img {
-  display: block;
-  width: 100%;
-  height: 45rem;
+best-seller ul li img {
+  max-width: 200px;
+}
+
+best-seller ul li img:hover {
   cursor: pointer;
 }
 
-/* Hover */
-best-seller .best-seller__products ul li .hover {
+best-seller ul li > a {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  padding-top: 20px;
+}
+
+best-seller ul li > p {
+  color: #3cb878;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+best-seller ul li:first-child {
+  display: flex;
+  align-items: center;
+}
+
+best-seller ul li:first-child h3 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333333;
+  display: block;
+}
+
+best-seller ul li:first-child small {
+  color: #3cb878;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+}
+
+best-seller ul li:first-child p {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+/* ** ACTION ** */
+best-seller ul li:hover .action {
+  display: block;
+}
+
+best-seller ul li .action {
   position: absolute;
-  top: 2%;
-  left: 85%;
+  top: 0px;
+  right: 30px;
   display: none;
 }
 
-best-seller .best-seller__products ul li:hover .hover {
-  display: flex;
-  flex-direction: column;
-}
-
-best-seller .best-seller__products ul li .hover span {
-  background: url(../images/compare.png) no-repeat;
-  width: 4rem;
-  height: 4rem;
-  cursor: pointer;
+best-seller ul li .action a {
+  background: url(../images/compare.png) no-repeat top;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
   display: block;
+  background-position: -8px -8px;
 }
 
-best-seller .best-seller__products ul li .hover span.cart {
-  background-position: 0rem 0rem;
+best-seller ul li .action a.heart {
+  background-position: -8px -58px;
 }
 
-best-seller .best-seller__products ul li .hover span.like {
-  background-position: 0rem -5rem;
-  margin-top: 1rem;
+best-seller ul li .action a.compare {
+  background-position: -8px -108px;
 }
 
-best-seller .best-seller__products ul li .hover span.compare {
-  background-position: 0rem -10rem;
-  margin-top: 1rem;
-}
-
-/* CSS cho Static-blocks */
-static-blocks {
-  height: 20rem;
-  display: flex;
-}
-
-static-blocks .item {
-  width: 25%;
-  height: 100%;
-  background-color: #f5f6f9;
-  margin: 0rem 0.05rem;
-  position: relative;
-}
-
-static-blocks .item div {
+/* SHIPPING */
+shipping {
+  display: block;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  height: 200px;
+  background: #f5f6f9;
+  margin-top: 100px;
 }
 
-static-blocks .item div span {
+shipping ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+shipping ul li {
+  width: 25%;
   display: block;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto;
+  text-align: center;
+  border-left: 1px solid #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-static-blocks .item .special-offers .diamond {
-  background: url(../images/diamond.png) no-repeat center;
-  background-size: contain;
-}
-
-static-blocks .item div h3 {
+shipping ul li h3 {
   text-transform: uppercase;
   color: #232323;
-  font: 600 1.8rem "Poppins", sans-serif;
-  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-static-blocks .item div p {
-  color: #888;
-  font: normal 400 1.3rem "droid-serif", serif;
+shipping ul li small {
+  color: #888888;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
 }
 
-static-blocks .item .free-delivery .plane {
-  background: url(../images/plane.png) no-repeat center;
-  background-size: contain;
+/* PROMOTION */
+promotion {
+  width: 100%;
+  display: block;
+  background: #2e3348;
 }
 
-static-blocks .item .return-policy .return {
-  background: url(../images/return.png) no-repeat center;
-  background-size: contain;
-}
-
-static-blocks .item .fastest-shipping .rocket {
-  background: url(../images/rocket.png) no-repeat center;
-  background-size: contain;
-}
-
-/* CSS cho categories */
-categories {
-  height: 64rem;
+promotion ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
 }
 
-categories div {
-  height: 100%;
-  flex-grow: 1;
-  background-color: #2e3348;
-  position: relative;
-}
-
-categories div.center {
-  background-color: #34394f;
-}
-
-categories div span {
+promotion ul li {
   display: block;
-  width: 45rem;
-  height: 45rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 33.3%;
+  height: 426px;
+  padding: 63px;
 }
 
-categories div .summer-autumn__image {
-  background: url(../images/summer-autumn.png) no-repeat center;
+promotion ul li img {
+  width: 300px;
+  height: 300px;
 }
 
-categories div .fashion-for-men__image {
-  background: url(../images/30-discount.png) no-repeat center;
+promotion ul li.active {
+  background: #34394f;
 }
 
-categories div .new-fashion-styles__image {
-  background: url(../images/new-fashion.png) no-repeat center;
-}
-
-categories div .summer-autumn__image,
-categories div .fashion-for-men__image,
-categories div .new-fashion-styles__image {
-  background-size: cover;
-}
-
-/* CSS cho Products List */
-products-list {
+/* FEATURED PRODUCTS */
+featured-products {
+  width: 100%;
+  margin-top: 100px;
   display: block;
-  height: auto;
-  padding: 10rem 5.5rem;
 }
 
-products-list .products-list__title {
+featured-products > h3,
+featured-products > small {
   text-align: center;
 }
 
-products-list .products-list__title h3 {
+featured-products > h3 {
   text-transform: uppercase;
-  color: #333;
-  font: 700 3rem "Poppins", sans-serif;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
 }
 
-products-list .products-list__title small {
+featured-products > small {
   display: block;
   color: #3cb878;
-  font: italic 400 1.5rem "droid-serif", serif;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-products-list .products-list__products {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  display: block;
-}
-
-products-list .products-list__products ul {
-  margin: 0rem;
-  padding: 0rem;
+featured-products ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
-  width: 100%;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 60px;
 }
 
-products-list .products-list__products ul li {
+featured-products ul li {
   display: block;
-  width: 19.5%;
-  height: auto;
-  margin-top: 5rem;
+  min-height: 200px;
+  width: 20%;
+  padding: 0px 30px 80px 30px;
   position: relative;
 }
 
-products-list .products-list__products ul li .detail img {
-  display: block;
-  width: 100%;
-  height: 45rem;
-  cursor: pointer;
+featured-products ul li img {
+  max-width: 100%;
 }
 
-/* Hover */
-products-list .products-list__products ul li .hover {
+featured-products ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+featured-products ul li p {
+  color: #3cb878;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+/* ** ACTION ** */
+featured-products ul li:hover .action {
+  display: block;
+}
+
+featured-products ul li .action {
   position: absolute;
-  top: 2%;
-  left: 85%;
+  top: 0px;
+  right: 30px;
   display: none;
 }
-
-products-list .products-list__products ul li:hover .hover {
-  display: flex;
-  flex-direction: column;
-}
-
-products-list .products-list__products ul li .hover span {
-  background: url(../images/compare.png) no-repeat;
-  width: 4rem;
-  height: 4rem;
-  cursor: pointer;
+featured-products ul li .action a {
+  background: url(../images/compare.png) no-repeat top;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
   display: block;
+  background-position: -8px -8px;
 }
 
-products-list .products-list__products ul li .hover span.cart {
-  background-position: 0rem 0rem;
+featured-products ul li .action a.heart {
+  background-position: -8px -58px;
 }
 
-products-list .products-list__products ul li .hover span.like {
-  background-position: 0rem -5rem;
-  margin-top: 1rem;
+featured-products ul li .action a.compare {
+  background-position: -8px -108px;
 }
 
-products-list .products-list__products ul li .hover span.compare {
-  background-position: 0rem -10rem;
-  margin-top: 1rem;
+/* DISCOUNT & BRAND */
+discount-brand {
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin-top: 20px;
 }
 
-/* CSS cho Clients */
-subcribe-clients {
-  height: 30rem;
+discount-brand div.container {
   display: flex;
+  height: 100%;
 }
 
-subcribe-clients .subcribe {
+/* ** DISCOUNT ** */
+discount-brand .discount {
   width: 50%;
-  height: 100%;
   background: url(../images/bg-special-discount.jpg) no-repeat;
   text-align: center;
+  padding-top: 4%;
 }
 
-subcribe-clients .subcribe h3 {
-  color: #fff;
-  font: 500 2.5rem "Poppins", sans-serif;
-  letter-spacing: 0.2rem;
-  margin-top: 6rem;
+/* ** ** text ** ** */
+discount-brand .discount h3 {
+  color: #ffffff;
 }
 
-subcribe-clients .subcribe p {
-  color: #fff;
-  font: normal 1.5rem "Roboto", sans-serif;
-  margin-top: 1.2rem;
+discount-brand .discount h3 span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
-subcribe-clients .subcribe form {
-  margin-top: 2rem;
+discount-brand .discount h3 small {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0px 100px;
 }
 
-subcribe-clients .subcribe form input#email {
-  width: 30rem;
-  height: 4.5rem;
-  font-size: 1.8rem;
-  padding-left: 2.5rem;
+/* ** ** form ** ** */
+discount-brand .discount form {
+  margin-top: 20px;
+}
+discount-brand .discount form input {
+  width: 300px;
+  height: 45px;
+  padding: 17px 25px 17px 25px;
+  border: 1px solid #fff;
+  border-radius: 0px;
 }
 
-subcribe-clients .subcribe form button.btn-submit {
-  width: 20rem;
-  height: 4.5rem;
-  margin-left: 1rem;
+discount-brand .discount form button {
+  width: 200px;
+  height: 45px;
+  margin-left: 10px;
   text-transform: uppercase;
-  font: 500 1.8rem "Poppins", sans-serif;
-  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
   background: #3cb878;
   border: none;
   border-radius: 0px;
   cursor: pointer;
 }
 
-subcribe-clients .clients {
+/* ** BRAND ** */
+discount-brand .brand {
   width: 50%;
-  height: 100%;
-  background-color: #f5f6f9;
+  background: #f5f6f9;
 }
 
-subcribe-clients .clients ul {
-  height: 100%;
-  margin: 0rem;
-  padding: 0rem;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-
-subcribe-clients .clients ul li {
-  display: block;
-  flex-grow: 1;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-subcribe-clients .clients ul li span {
-  display: block;
-  width: 15rem;
-  height: 15rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-subcribe-clients .clients ul li .brand-logo-1 {
-  background: url(../images/brand-logo-1a.png) no-repeat center;
-  background-size: contain;
-}
-
-subcribe-clients .clients ul li .brand-logo-2 {
-  background: url(../images/brand-logo-2a.png) no-repeat center;
-  background-size: contain;
-}
-subcribe-clients .clients ul li .brand-logo-3 {
-  background: url(../images/brand-logo-3a.png) no-repeat center;
-  background-size: contain;
-}
-subcribe-clients .clients ul li .brand-logo-4 {
-  background: url(../images/brand-logo-4a.png) no-repeat center;
-  background-size: contain;
-}
-
-/* CSS cho footer */
-footer {
-  height: 5.5rem;
-  padding: 0rem 37.5rem;
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-}
-
-footer .copyright-text {
-  width: 50%;
-  height: 100%;
-  text-align: left;
-  position: relative;
-}
-
-footer .copyright-text p {
-  color: #777;
-  font: normal 1.5rem "Roboto", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-}
-
-footer .cards {
-  width: 50%;
-  height: 100%;
-}
-
-footer .cards ul {
-  height: 100%;
-  margin: 0;
+discount-brand .brand ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-footer .cards ul li {
-  display: flex;
-  width: 4.5rem;
-  height: auto;
-  margin-left: 1.5rem;
   align-items: center;
 }
 
-footer .cards ul li span {
+discount-brand .brand ul li {
+  width: 25%;
+  text-align: center;
+}
+discount-brand .brand ul li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 55px;
   display: block;
-  width: 4.5rem;
-  height: 100%;
+  background: #000000;
 }
 
-footer .cards ul li .visa {
-  background: url(../images/visa.png) no-repeat center;
-  background-size: contain;
+footer .container {
+  display: flex;
 }
 
-footer .cards ul li .paypal {
-  background: url(../images/paypal.png) no-repeat center;
-  background-size: contain;
+/* ** COPYRIGHT ** */
+footer .copyright {
+  width: 60%;
 }
 
-footer .cards ul li .amazon {
-  background: url(../images/amazon.png) no-repeat center;
-  background-size: contain;
+footer .copyright p {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
 }
 
-footer .cards ul li .maestro {
-  background: url(../images/maestro.png) no-repeat center;
-  background-size: contain;
+/* ** PAYMENT ** */
+footer .payment {
+  width: 40%;
 }
 
-footer .cards ul li .amex {
-  background: url(../images/amex.png) no-repeat center;
-  background-size: contain;
+footer .payment ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding-top: 15px;
 }
 
-/* =====
-    Hoàn thành CSS style cơ bản cho màn hình laptop width 1920px
-===== */
+footer .payment ul li {
+  padding-left: 15px;
+}
