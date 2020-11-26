@@ -11,7 +11,7 @@
     <!---- responsive ---->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
     <link rel="stylesheet" href="./css/responsive.css" />
 
@@ -23,6 +23,23 @@
     />
   </head>
   <body>
+    <!-- Phần thông tin thêm khi nhấn vào sản phẩm -->
+    <div class="modal">
+      <div class="product-detail">
+        <div>
+          <img src="./images/future-product-1.jpg" class="main" />
+        </div>
+        <div class="thumb">
+          <h3>Crown Summit Backpack</h3>
+          <img src="./images/future-product-1.jpg" alt="1" />
+          <img src="./images/future-product-2.jpg" alt="2" />
+          <img src="./images/future-product-3.jpg" alt="3" />
+          <img src="./images/future-product-4.jpg" alt="4" />
+          <img src="./images/future-product-5.jpg" alt="5" />
+        </div>
+      </div>
+    </div>
+
     <!-- Phần menu -->
     <menu>
       <!-- Logo -->
@@ -405,7 +422,7 @@
           aliquet quam. <br />
           Register your email for news and special offers
         </p>
-        <form action="" method="POST">
+        <form action="" method="" autocomplete="off">
           <input
             type="email"
             name="email"
@@ -413,7 +430,9 @@
             placeholder="E-mail address..."
             required
           />
-          <button type="submit" class="btn-submit">GET COUPON NOW</button>
+          <button id="submit-btn" type="submit" class="submit-btn">
+            GET COUPON NOW
+          </button>
         </form>
       </div>
       <!-- width 50% -->
@@ -446,6 +465,11 @@
     </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/menu-toggle.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <!-- <script>
+      function submitEmail() {
+        window.location.href = "https://github.com/lhp1507";
+      }
+    </script> -->
   </body>
 </html>

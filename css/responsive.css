@@ -90,7 +90,7 @@
     font-size: 1.6rem;
     padding-left: 2rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.6rem;
   }
 
@@ -237,7 +237,7 @@
     font-size: 1.5rem;
     padding-left: 2rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.5rem;
   }
   subcribe-clients .clients ul li span {
@@ -423,7 +423,7 @@
     font-size: 1.4rem;
     padding-left: 1.5rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.4rem;
     width: 17rem;
     height: 4rem;
@@ -458,7 +458,6 @@
     font-size: 1.4rem;
     margin-top: 0rem;
   }
-
   /* MENU */
   menu {
     height: 6rem;
@@ -608,7 +607,7 @@
     font-size: 1.5rem;
     padding-left: 2rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.5rem;
     width: 20rem;
     height: 4rem;
@@ -669,7 +668,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 9999;
+    z-index: 99;
     background: #f1f1f1;
     text-align: left;
     min-height: 10rem;
@@ -787,7 +786,7 @@
     width: 33rem;
     font-size: 1.4rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.4rem;
     width: 17rem;
     margin-top: 1rem;
@@ -920,7 +919,7 @@
   subcribe-clients .subcribe form input#email {
     width: 30rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     font-size: 1.4rem;
     width: 17rem;
     margin-top: 0.5rem;
@@ -1092,7 +1091,7 @@
   subcribe-clients .subcribe form input#email {
     width: 28rem;
   }
-  subcribe-clients .subcribe form button.btn-submit {
+  subcribe-clients .subcribe form button.submit-btn {
     width: 16rem;
   }
 
