@@ -58,8 +58,9 @@ p.price {
 menu {
   height: 10rem;
   display: flex;
-  z-index: 9999;
+  z-index: 99;
   background-color: #fff;
+  position: fixed;
 }
 /* LOGO */
 menu .menu__logo {
@@ -561,7 +562,7 @@ subcribe-clients .subcribe form input#email {
   padding-left: 2.5rem;
 }
 
-subcribe-clients .subcribe form button.btn-submit {
+subcribe-clients .subcribe form button.submit-btn {
   width: 20rem;
   height: 4.5rem;
   margin-left: 1rem;
@@ -707,3 +708,51 @@ footer .cards ul li .amex {
 /* =====
     Hoàn thành CSS style cơ bản cho màn hình laptop width 1920px
 ===== */
+
+/* CSS cho Modal */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 101;
+}
+
+.product-detail {
+  max-width: 850px;
+  max-height: 610px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+}
+.product-detail div {
+  width: 70%;
+}
+.product-detail img.main {
+  max-width: 640px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail .thumb {
+  padding: 10px;
+  width: 30%;
+}
+.product-detail .thumb h3 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.product-detail .thumb img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 2px;
+}
