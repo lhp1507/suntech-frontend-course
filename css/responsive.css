@@ -9,7 +9,8 @@
   }
 
   /* MENU */
-  menu {
+  menu,
+  .menu__container {
     height: 8rem;
   }
   menu .menu__logo {
@@ -21,13 +22,10 @@
 
   /* SLIDER */
   slider,
-  slider .slider__images {
+  #owl-my,
+  .owl-stage-outer,
+  .owl-stage {
     max-height: 70rem;
-  }
-  slider .slider__content span,
-  slider .slider__content small {
-    font-size: 4.5rem;
-    letter-spacing: 0.7rem;
   }
 
   /* BEST SELLERS */
@@ -271,7 +269,8 @@
   }
 
   /* MENU */
-  menu {
+  menu,
+  .menu__container {
     height: 7rem;
   }
   menu .menu__logo {
@@ -459,7 +458,8 @@
     margin-top: 0rem;
   }
   /* MENU */
-  menu {
+  menu,
+  .menu__container {
     height: 6rem;
   }
   menu .menu__logo {
@@ -646,7 +646,8 @@
   }
 
   /* MENU */
-  menu {
+  menu,
+  .menu__container {
     height: 5rem;
   }
   menu .menu__logo,

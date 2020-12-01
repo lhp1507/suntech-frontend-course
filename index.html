@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <title>Shop - Final frontend project</title>
-
-    <!-- CSS -->
-    <!---- style ---->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!---- responsive ---->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
+
+    <title>Shop - Final frontend project</title>
+
+    <!-- CSS -->
+    <!-- -- Carousel -- -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <!-- -- style -- -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- -- responsive -- -->
     <link rel="stylesheet" href="./css/responsive.css" />
 
     <!-- Fonts -->
@@ -42,53 +45,59 @@
 
     <!-- Phần menu -->
     <menu>
-      <!-- Logo -->
-      <div class="menu__logo">
-        <img src="./images/logo-suntech.jpg" alt="logo-suntech" />
-      </div>
-      <!-- Menu điều hướng -->
-      <div class="menu__dir">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Kids</a></li>
-          <li><a href="#">Jewellery</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-      </div>
-      <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
-      <div class="menu__right">
-        <ul>
-          <li>
-            <span class="cart">
-              <small class="cart-number">3</small>
-            </span>
-          </li>
-          <li>
-            <span class="search"></span>
-          </li>
-          <li>
-            <span class="burger"></span>
-          </li>
-        </ul>
+      <div class="menu__container">
+        <!-- Logo -->
+        <div class="menu__logo">
+          <img src="./images/logo-suntech.jpg" alt="logo-suntech" />
+        </div>
+        <!-- Menu điều hướng -->
+        <div class="menu__dir">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
+        <div class="menu__right">
+          <ul>
+            <li>
+              <span class="cart">
+                <small class="cart-number">3</small>
+              </span>
+            </li>
+            <li>
+              <span class="search"></span>
+            </li>
+            <li>
+              <span class="burger"></span>
+            </li>
+          </ul>
+        </div>
       </div>
     </menu>
 
     <!-- Phần slider -->
     <slider>
-      <!-- Chữ hiển thị trên slider -->
-      <div class="slider__content">
-        <span>The best</span>
-        <small>Woocommerce</small>
-      </div>
-      <!-- Khung bao phần chứa ảnh -->
-      <div class="slider__images">
-        <img src="./images/slider-1.jpg" alt="slider-1" />
-        <img src="./images/slider-2.jpg" alt="slider-2" />
-        <img src="./images/slider-3.jpg" alt="slider-3" />
-        <img src="./images/slider-4.jpg" alt="slider-4" />
-        <img src="./images/slider-5.jpg" alt="slider-5" />
+      <div id="owl-my" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./images/slider-1.jpg" alt="slider-1" />
+        </div>
+        <div class="item">
+          <img src="./images/slider-2.jpg" alt="slider-2" />
+        </div>
+        <div class="item">
+          <img src="./images/slider-3.jpg" alt="slider-3" />
+        </div>
+        <div class="item">
+          <img src="./images/slider-4.jpg" alt="slider-4" />
+        </div>
+        <div class="item">
+          <img src="./images/slider-5.jpg" alt="slider-5" />
+        </div>
       </div>
     </slider>
 
@@ -465,11 +474,7 @@
     </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
-    <!-- <script>
-      function submitEmail() {
-        window.location.href = "https://github.com/lhp1507";
-      }
-    </script> -->
   </body>
 </html>

@@ -37,4 +37,21 @@ $(() => {
     // document.location.href = url; // open in the same tab
   });
   //
+
+  //slider - owl carousel:
+  $("#owl-my").owlCarousel({
+    loop: true,
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    autoHeight: true,
+    transitionStyle: "fade",
+    items: 1,
+    itemsDesktop: false,
+    itemsDesktopSmall: false,
+    itemsTablet: false,
+    itemsMobile: false,
+  });
+  //Source: http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/autoHeight.html
+  //
 });
