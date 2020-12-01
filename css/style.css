@@ -57,10 +57,15 @@ p.price {
 /* CSS cho menu */
 menu {
   height: 10rem;
+  position: relative;
+}
+.menu__container {
+  width: 100%;
+  position: fixed;
+  height: 10rem;
   display: flex;
   z-index: 99;
   background-color: #fff;
-  position: fixed;
 }
 /* LOGO */
 menu .menu__logo {
@@ -171,49 +176,17 @@ menu .menu__right ul li span.burger {
 
 /* CSS cho slider */
 slider {
-  height: auto;
   max-height: 80rem;
   display: block;
-  position: relative;
 }
-
-slider .slider__content {
-  display: block;
-  position: absolute;
-  top: 38%;
-  left: 12%;
-  z-index: 2;
-}
-
-slider .slider__content span,
-slider .slider__content small {
-  text-transform: uppercase;
-  display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 6rem;
-  letter-spacing: 1rem;
-}
-
-slider .slider__content span {
-  color: #333;
-}
-
-slider .slider__content small {
-  color: #3cb878;
-}
-
-slider .slider__images {
-  display: flex;
-  width: 100%;
+#owl-my,
+.owl-stage-outer,
+.owl-stage {
   max-height: 80rem;
-  overflow-x: auto;
-  z-index: 1;
 }
-
-slider .slider__images img {
+#owl-my .item img {
+  display: block;
   width: 100%;
-  flex-shrink: 0;
   height: auto;
 }
 
