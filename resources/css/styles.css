@@ -139,7 +139,7 @@ menu .menu__right ul li {
 }
 
 menu .menu__right ul li span {
-  background: url(../images/cart.png) no-repeat;
+  background: url(../img/cart.png) no-repeat;
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
@@ -277,7 +277,7 @@ best-seller .best-seller__products ul li:hover .hover {
 }
 
 best-seller .best-seller__products ul li .hover span {
-  background: url(../images/compare.png) no-repeat;
+  background: url(../img/compare.png) no-repeat;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
@@ -329,7 +329,7 @@ static-blocks .item div span {
 }
 
 static-blocks .item .special-offers .diamond {
-  background: url(../images/diamond.png) no-repeat center;
+  background: url(../img/diamond.png) no-repeat center;
   background-size: contain;
 }
 
@@ -346,17 +346,17 @@ static-blocks .item div p {
 }
 
 static-blocks .item .free-delivery .plane {
-  background: url(../images/plane.png) no-repeat center;
+  background: url(../img/plane.png) no-repeat center;
   background-size: contain;
 }
 
 static-blocks .item .return-policy .return {
-  background: url(../images/return.png) no-repeat center;
+  background: url(../img/return.png) no-repeat center;
   background-size: contain;
 }
 
 static-blocks .item .fastest-shipping .rocket {
-  background: url(../images/rocket.png) no-repeat center;
+  background: url(../img/rocket.png) no-repeat center;
   background-size: contain;
 }
 
@@ -390,15 +390,15 @@ categories div span {
 }
 
 categories div .summer-autumn__image {
-  background: url(../images/summer-autumn.png) no-repeat center;
+  background: url(../img/summer-autumn.png) no-repeat center;
 }
 
 categories div .fashion-for-men__image {
-  background: url(../images/30-discount.png) no-repeat center;
+  background: url(../img/30-discount.png) no-repeat center;
 }
 
 categories div .new-fashion-styles__image {
-  background: url(../images/new-fashion.png) no-repeat center;
+  background: url(../img/new-fashion.png) no-repeat center;
 }
 
 categories div .summer-autumn__image,
@@ -477,7 +477,7 @@ products-list .products-list__products ul li:hover .hover {
 }
 
 products-list .products-list__products ul li .hover span {
-  background: url(../images/compare.png) no-repeat;
+  background: url(../img/compare.png) no-repeat;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
@@ -507,7 +507,7 @@ subcribe-clients {
 subcribe-clients .subcribe {
   width: 50%;
   height: 100%;
-  background: url(../images/bg-special-discount.jpg) no-repeat;
+  background: url(../img/bg-special-discount.jpg) no-repeat;
   text-align: center;
 }
 
@@ -582,20 +582,20 @@ subcribe-clients .clients ul li span {
 }
 
 subcribe-clients .clients ul li .brand-logo-1 {
-  background: url(../images/brand-logo-1a.png) no-repeat center;
+  background: url(../img/brand-logo-1a.png) no-repeat center;
   background-size: contain;
 }
 
 subcribe-clients .clients ul li .brand-logo-2 {
-  background: url(../images/brand-logo-2a.png) no-repeat center;
+  background: url(../img/brand-logo-2a.png) no-repeat center;
   background-size: contain;
 }
 subcribe-clients .clients ul li .brand-logo-3 {
-  background: url(../images/brand-logo-3a.png) no-repeat center;
+  background: url(../img/brand-logo-3a.png) no-repeat center;
   background-size: contain;
 }
 subcribe-clients .clients ul li .brand-logo-4 {
-  background: url(../images/brand-logo-4a.png) no-repeat center;
+  background: url(../img/brand-logo-4a.png) no-repeat center;
   background-size: contain;
 }
 
@@ -654,27 +654,27 @@ footer .cards ul li span {
 }
 
 footer .cards ul li .visa {
-  background: url(../images/visa.png) no-repeat center;
+  background: url(../img/visa.png) no-repeat center;
   background-size: contain;
 }
 
 footer .cards ul li .paypal {
-  background: url(../images/paypal.png) no-repeat center;
+  background: url(../img/paypal.png) no-repeat center;
   background-size: contain;
 }
 
 footer .cards ul li .amazon {
-  background: url(../images/amazon.png) no-repeat center;
+  background: url(../img/amazon.png) no-repeat center;
   background-size: contain;
 }
 
 footer .cards ul li .maestro {
-  background: url(../images/maestro.png) no-repeat center;
+  background: url(../img/maestro.png) no-repeat center;
   background-size: contain;
 }
 
 footer .cards ul li .amex {
-  background: url(../images/amex.png) no-repeat center;
+  background: url(../img/amex.png) no-repeat center;
   background-size: contain;
 }
 
