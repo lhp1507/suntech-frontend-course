@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Medium"),
+    url("../fonts/poppins/Poppins-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins SemiBold"),
+    url("../fonts/poppins/Poppins-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Bold"),
+    url("../fonts/poppins/Poppins-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Droid-serif Regular";
+  src: url("../fonts/droid-serif/DroidSerif-Regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Droid-serif Italic";
+  src: url("../fonts/droid-serif/DroidSerif-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$sz-small: 0.5rem;
+$sz-text: 1rem;
+$sz-h1: 1.5rem;
+$sz-title: 3rem;
+
+$white-bg: #fff;
+$black-bg: #000;
+$light-gray-bg: #f5f6f9;
+$dark-blue-bg: #2e3348;
+$dark-gray-blue-bg: #34394f;
+$light-gray-blue-bg: #f5f6f9;
+
+$text-color: #333;
+$active-color: #3cb878;
+$gray-8-color: #888;
+$gray-7-color: #777;
+$white: #fff;
+
+$phone: 600px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;

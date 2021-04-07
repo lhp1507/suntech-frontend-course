@@ -6,39 +6,49 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
-    <title>Shop - Final frontend project</title>
+    <title>Shop ▬ frontend project</title>
     <!-- CSS -->
     <!-- -- Carousel -- -->
     <link rel="stylesheet" href="./vendors/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./vendors/css/owl.theme.default.min.css" />
     <!-- -- style -- -->
-    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <link rel="stylesheet" href="./resources/scss/dist/main.css" />
     <!-- -- responsive - Media queries -- -->
-    <link rel="stylesheet" href="./resources/css/queries.css" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/kdu4dox.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link rel="stylesheet" href="./resources/css/queries.css" /> -->
   </head>
   <body>
     <!-- Phần menu -->
-    <menu>
+    <menu class="menu">
       <div class="menu__container">
         <!-- Logo -->
         <div class="menu__logo">
-          <h1><a href="#">SUNTECH VIETNAM</a></h1>
+          <h1>
+            <a href="#" class="menu__logo-text --uppercase active"
+              >Suntech Vietnam</a
+            >
+          </h1>
         </div>
         <!-- Menu điều hướng -->
         <div class="menu__dir">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Jewellery</a></li>
-            <li><a href="#">Accessories</a></li>
+            <li>
+              <a href="#" class="active --uppercase">Home</a>
+            </li>
+            <li>
+              <a href="#" class="--uppercase">Women</a>
+            </li>
+            <li>
+              <a href="#" class="--uppercase">Men</a>
+            </li>
+            <li>
+              <a href="#" class="--uppercase">Kids</a>
+            </li>
+            <li>
+              <a href="#" class="--uppercase">Jewellery</a>
+            </li>
+            <li>
+              <a href="#" class="--uppercase">Accessories</a>
+            </li>
           </ul>
         </div>
         <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
@@ -60,7 +70,7 @@
       </div>
     </menu>
     <!-- Phần slider -->
-    <slider>
+    <slider class="slider">
       <div id="owl-my" class="owl-carousel owl-theme">
         <div class="item">
           <img src="./resources/img/slider/slider-1.jpg" alt="slider-1" />
@@ -80,7 +90,7 @@
       </div>
     </slider>
     <!-- Phần Best sellers -->
-    <best-seller>
+    <best-seller class="best-seller">
       <!-- Title -->
       <div class="best-seller__title">
         <div class="text">
@@ -188,7 +198,7 @@
       </div>
     </best-seller>
     <!-- Static-blocks -->
-    <static-blocks>
+    <static-blocks class="static-blocks">
       <div class="item">
         <div class="special-offers">
           <span class="diamond"></span>
@@ -219,7 +229,7 @@
       </div>
     </static-blocks>
     <!-- Categories 640px x 640px -->
-    <categories>
+    <categories class="categories">
       <div>
         <span class="summer-autumn__image"></span>
       </div>
@@ -231,7 +241,7 @@
       </div>
     </categories>
     <!-- Products List -->
-    <products-list>
+    <products-list class="products-list">
       <div class="products-list__title">
         <h3>Featured Products</h3>
         <small>Newest trends from top brands</small>
@@ -463,7 +473,7 @@
       </div>
     </products-list>
     <!-- Clients -->
-    <subcribe-clients>
+    <subcribe-clients class="subcribe-clients">
       <!-- width 50% -->
       <div class="subcribe">
         <h3>Get Out Special Discount</h3>
@@ -496,7 +506,7 @@
       </div>
     </subcribe-clients>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="copyright-text">
         <p>
           Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios
