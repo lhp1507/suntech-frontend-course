@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 1400px;
+  margin: 0px auto;
+  color: $text-color;
+  background-color: $white-bg;
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+  color: $text-color;
+  font-family: "Poppins Medium";
+  text-decoration: none;
+  &.name {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  &.active,
+  &:hover {
+    color: $active-color;
+  }
+}
+p {
+  &.price {
+    color: $active-color;
+    font-family: "Droid-serif Regular";
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+.title {
+  text-transform: uppercase;
+  color: $text-color;
+  font-family: "Poppins SemiBold";
+  font-size: 3rem;
+}
+.small {
+  color: $active-color;
+  font-family: "Droid-serif Italic";
+  font-size: 1.4rem;
+}
+.--uppercase {
+  text-transform: uppercase;
+}
