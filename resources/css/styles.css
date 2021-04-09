@@ -141,7 +141,7 @@ menu .menu__right ul li span {
 menu .menu__right ul li span.cart {
   position: relative;
 }
-menu .menu__right ul li span.cart small.cart-number {
+menu .menu__right ul li span.cart small.cart__number {
   font-size: 1rem;
   position: absolute;
   width: 1.6rem;
@@ -188,41 +188,41 @@ best-seller {
   margin-top: 9rem;
   margin-bottom: 9rem;
 }
-best-seller .best-seller__title {
+best-seller .bestseller__title {
   width: 20%;
   height: auto;
   display: inline-block;
   position: relative;
   margin-left: 5.5rem;
 }
-best-seller .best-seller__title .text {
+best-seller .bestseller__title .bestseller__title-text {
   position: absolute;
   top: 50%;
   left: 0%;
   transform: translate(0%, -50%);
   padding: 0rem 1.5rem;
 }
-best-seller .best-seller__title .text h3 {
+best-seller .bestseller__title .bestseller__title-text h3 {
   text-transform: uppercase;
   color: #333;
   font: 700 3rem "Poppins", sans-serif;
 }
-best-seller .best-seller__title .text small {
+best-seller .bestseller__title .bestseller__title-text small {
   color: #3cb878;
   font: italic 400 1.4rem "droid-serif", serif;
 }
-best-seller .best-seller__title .text p {
+best-seller .bestseller__title .bestseller__title-text p {
   color: #333;
   font: 500 1.6rem "Poppins", sans-serif;
   margin-top: 3rem;
 }
-best-seller .best-seller__products {
+best-seller .bestseller__products {
   width: 80%;
   height: auto;
   display: inline-block;
   margin-right: 5.5rem;
 }
-best-seller .best-seller__products ul {
+best-seller .bestseller__products ul {
   margin: 0rem;
   padding: 0rem;
   list-style-type: none;
@@ -232,44 +232,44 @@ best-seller .best-seller__products ul {
   flex-direction: row;
   justify-content: space-between;
 }
-best-seller .best-seller__products ul li {
+best-seller .bestseller__products ul li {
   display: block;
   width: 24.5%;
   height: 100%;
   position: relative;
 }
-best-seller .best-seller__products ul li .detail img {
+best-seller .bestseller__products ul li .list__item-detail img {
   display: block;
   width: 100%;
   height: 45rem;
   cursor: pointer;
 }
 /* Hover */
-best-seller .best-seller__products ul li .hover {
+best-seller .bestseller__products ul li .hover {
   position: absolute;
   top: 2%;
   left: 85%;
   display: none;
 }
-best-seller .best-seller__products ul li:hover .hover {
+best-seller .bestseller__products ul li:hover .hover {
   display: flex;
   flex-direction: column;
 }
-best-seller .best-seller__products ul li .hover span {
+best-seller .bestseller__products ul li .hover span {
   background: url(../img/common/compare.png) no-repeat;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
   display: block;
 }
-best-seller .best-seller__products ul li .hover span.cart {
+best-seller .bestseller__products ul li .hover span.cart {
   background-position: 0rem 0rem;
 }
-best-seller .best-seller__products ul li .hover span.like {
+best-seller .bestseller__products ul li .hover span.like {
   background-position: 0rem -5rem;
   margin-top: 1rem;
 }
-best-seller .best-seller__products ul li .hover span.compare {
+best-seller .bestseller__products ul li .hover span.compare {
   background-position: 0rem -10rem;
   margin-top: 1rem;
 }

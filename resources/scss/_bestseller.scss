@@ -1,0 +1,49 @@
+.bestseller-container {
+  width: 100%;
+  .bestseller {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 3rem;
+    &__title {
+      width: 19%;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          letter-spacing: 0.2rem;
+        }
+        small {
+          padding-top: 0.5rem;
+        }
+        p {
+          padding-top: 2rem;
+        }
+      }
+    }
+    &__products {
+      width: 79%;
+      &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .list__item {
+          width: 24%;
+          &-detail {
+            .-img {
+              cursor: pointer;
+              width: auto;
+              height: 40rem;
+            }
+            .-name {
+              margin-top: 2rem;
+            }
+            .-price {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

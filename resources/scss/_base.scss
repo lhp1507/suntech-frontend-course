@@ -11,38 +11,48 @@ img {
   object-fit: cover;
   max-width: 100%;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 a {
   display: inline-block;
   color: $text-color;
   font-family: "Poppins Medium";
   text-decoration: none;
-  &.name {
-    font-size: 1rem;
-    margin-top: 2rem;
+  &.-name {
+    font-size: $sz-text;
+    line-height: $sz-text;
   }
   &.active,
   &:hover {
     color: $active-color;
   }
 }
-p {
-  &.price {
-    color: $active-color;
-    font-family: "Droid-serif Regular";
-    font-size: 2rem;
-    margin-top: 0.5rem;
-  }
+.-price {
+  color: $active-color;
+  font-family: "Droid-serif Regular";
+  font-size: $sz-price;
+  line-height: $sz-price;
 }
-.title {
-  text-transform: uppercase;
+.-text {
   color: $text-color;
-  font-family: "Poppins SemiBold";
-  font-size: 3rem;
+  font-family: "Poppins Medium";
+  font-size: $sz-text;
+  line-height: $sz-text;
 }
-.small {
+.-title {
+  color: $text-color;
+  font-family: "Poppins Bold";
+  font-size: $sz-title;
+  line-height: $sz-title;
+}
+.-small {
   color: $active-color;
   font-family: "Droid-serif Italic";
-  font-size: 1.4rem;
+  font-size: $sz-small;
+  line-height: $sz-small;
 }
 .--uppercase {
   text-transform: uppercase;

@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="./vendors/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./vendors/css/owl.theme.default.min.css" />
     <!-- -- style -- -->
-    <link rel="stylesheet" href="./resources/scss/dist/main.css" />
+    <link rel="stylesheet" href="./resources/scss/main.css" />
     <!-- -- responsive - Media queries -- -->
     <!-- <link rel="stylesheet" href="./resources/css/queries.css" /> -->
   </head>
   <body>
     <!-- Phần menu -->
-    <menu class="menu">
-      <div class="menu__container">
+    <menu class="menu-container">
+      <div class="menu">
         <!-- Logo -->
         <div class="menu__logo">
           <h1>
@@ -30,40 +30,40 @@
         </div>
         <!-- Menu điều hướng -->
         <div class="menu__dir">
-          <ul>
-            <li>
-              <a href="#" class="active --uppercase">Home</a>
+          <ul class="menu__dir-list">
+            <li class="list__item">
+              <a href="#" class="list__item-text active --uppercase">Home</a>
             </li>
-            <li>
-              <a href="#" class="--uppercase">Women</a>
+            <li class="list__item">
+              <a href="#" class="list__item-text --uppercase">Women</a>
             </li>
-            <li>
-              <a href="#" class="--uppercase">Men</a>
+            <li class="list__item">
+              <a href="#" class="list__item-text --uppercase">Men</a>
             </li>
-            <li>
-              <a href="#" class="--uppercase">Kids</a>
+            <li class="list__item">
+              <a href="#" class="list__item-text --uppercase">Kids</a>
             </li>
-            <li>
-              <a href="#" class="--uppercase">Jewellery</a>
+            <li class="list__item">
+              <a href="#" class="list__item-text --uppercase">Jewellery</a>
             </li>
-            <li>
-              <a href="#" class="--uppercase">Accessories</a>
+            <li class="list__item">
+              <a href="#" class="list__item-text --uppercase">Accessories</a>
             </li>
           </ul>
         </div>
         <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
         <div class="menu__right">
-          <ul>
-            <li>
-              <span class="cart">
-                <small class="cart-number">3</small>
+          <ul class="menu__right-list">
+            <li class="list__item">
+              <span class="list__item-img cart">
+                <small class="cart__number">3</small>
               </span>
             </li>
-            <li>
-              <span class="search"></span>
+            <li class="list__item">
+              <span class="list__item-img search"></span>
             </li>
-            <li>
-              <span class="burger"></span>
+            <li class="list__item">
+              <span class="list__item-img burger"></span>
             </li>
           </ul>
         </div>
@@ -90,111 +90,115 @@
       </div>
     </slider>
     <!-- Phần Best sellers -->
-    <best-seller class="best-seller">
-      <!-- Title -->
-      <div class="best-seller__title">
-        <div class="text">
-          <h3>Best sellers</h3>
-          <small>The best productions from us</small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+    <best-seller class="bestseller-container">
+      <div class="bestseller">
+        <!-- Title -->
+        <div class="bestseller__title">
+          <div class="bestseller__title-text">
+            <h3 class="-title --uppercase">Best sellers</h3>
+            <small class="-small">The best productions from us</small>
+            <p class="-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Sản phẩm best sellers
-            Kích thước ảnh sản phẩm: 300px x 450px -->
-      <div class="best-seller__products">
-        <ul>
-          <!-- 01 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
-              <img
-                src="./resources/img/best-sellers/best-seller-1.jpg"
-                alt="best-seller-1"
-              />
-              <a
-                class="name"
-                href="./resources/img/best-sellers/best-seller-1.jpg"
-                >Cruise Dual Analog</a
-              >
-              <p class="price">$250.00</p>
-            </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
-            </div>
-          </li>
-          <!-- 02 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
-              <img
-                src="./resources/img/best-sellers/best-seller-2.jpg"
-                alt="best-seller-2"
-              />
-              <a
-                class="name"
-                href="./resources/img/best-sellers/best-seller-2.jpg"
-                >Crown Summit T-shirt</a
-              >
-              <p class="price">$250.00</p>
-            </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
-            </div>
-          </li>
-          <!-- 03 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
-              <img
-                src="./resources/img/best-sellers/best-seller-3.jpg"
-                alt="best-seller-3"
-              />
-              <a
-                class="name"
-                href="./resources/img/best-sellers/best-seller-3.jpg"
-                >Vintas Bleached Sand - Low top</a
-              >
-              <p class="price">465.000 VND</p>
-            </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
-            </div>
-          </li>
-          <!-- 04 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
-              <img
-                src="./resources/img/best-sellers/best-seller-4.jpg"
-                alt="best-seller-4"
-              />
-              <a
-                class="name"
-                href="./resources/img/best-sellers/best-seller-4.jpg"
-                >Ananas x Lucky Luke Pattas - High top</a
-              >
-              <p class="price">850.000 VND</p>
-            </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
-            </div>
-          </li>
-        </ul>
+        <div class="bestseller__products">
+          <ul class="bestseller__products-list">
+            <!-- 01 -->
+            <li class="list__item">
+              <!-- Thông tin sản phẩm -->
+              <div class="list__item-detail">
+                <img
+                  src="./resources/img/best-sellers/best-seller-1.jpg"
+                  alt="best-seller-1"
+                  class="-img"
+                />
+                <a
+                  href="./resources/img/best-sellers/best-seller-1.jpg"
+                  class="-name"
+                  >Cruise Dual Analog</a
+                >
+                <p class="-price">$250.00</p>
+              </div>
+              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+              <div class="hover">
+                <span class="cart"></span>
+                <span class="like"></span>
+                <span class="compare"></span>
+              </div>
+            </li>
+            <!-- 02 -->
+            <li class="list__item">
+              <!-- Thông tin sản phẩm -->
+              <div class="list__item-detail">
+                <img
+                  src="./resources/img/best-sellers/best-seller-2.jpg"
+                  alt="best-seller-2"
+                  class="-img"
+                />
+                <a
+                  href="./resources/img/best-sellers/best-seller-2.jpg"
+                  class="-name"
+                  >Crown Summit T-shirt</a
+                >
+                <p class="-price">$250.00</p>
+              </div>
+              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+              <div class="hover">
+                <span class="cart"></span>
+                <span class="like"></span>
+                <span class="compare"></span>
+              </div>
+            </li>
+            <!-- 03 -->
+            <li class="list__item">
+              <!-- Thông tin sản phẩm -->
+              <div class="list__item-detail">
+                <img
+                  src="./resources/img/best-sellers/best-seller-3.jpg"
+                  alt="best-seller-3"
+                  class="-img"
+                />
+                <a
+                  href="./resources/img/best-sellers/best-seller-3.jpg"
+                  class="-name"
+                  >Vintas Bleached Sand - Low top</a
+                >
+                <p class="-price">465.000 VND</p>
+              </div>
+              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+              <div class="hover">
+                <span class="cart"></span>
+                <span class="like"></span>
+                <span class="compare"></span>
+              </div>
+            </li>
+            <!-- 04 -->
+            <li class="list__item">
+              <!-- Thông tin sản phẩm -->
+              <div class="list__item-detail">
+                <img
+                  src="./resources/img/best-sellers/best-seller-4.jpg"
+                  alt="best-seller-4"
+                  class="-img"
+                />
+                <a
+                  href="./resources/img/best-sellers/best-seller-4.jpg"
+                  class="-name"
+                  >Ananas x Lucky Luke Pattas - High top</a
+                >
+                <p class="-price">850.000 VND</p>
+              </div>
+              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
+              <div class="hover">
+                <span class="cart"></span>
+                <span class="like"></span>
+                <span class="compare"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </best-seller>
     <!-- Static-blocks -->
