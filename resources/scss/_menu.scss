@@ -1,19 +1,76 @@
-.menu {
+.menu-container {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 99;
-  &__container {
-    display: flex;
-    background-color: $white-bg;
-  }
-  &__logo {
-    width: 20%;
-    margin-left: 5%;
+  .menu {
     display: flex;
     align-items: center;
-    &-text {
-      font-size: $sz-h1 !important;
+    background-color: $white-bg;
+    padding: 2rem 7rem;
+    &__logo {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &-text {
+        font-size: $sz-h1 !important;
+      }
+    }
+    &__dir {
+      width: 60%;
+      &-list {
+        padding: 0 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .list__item {
+          &-text {
+            font-size: $sz-text !important;
+          }
+        }
+      }
+    }
+    &__right {
+      width: 20%;
+      &-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .list__item {
+          margin-left: 2rem;
+          &-img {
+            background: url(../img/common/cart.png) no-repeat;
+            display: inline-block;
+            width: 1.6rem;
+            height: 1.6rem;
+            cursor: pointer;
+          }
+          .cart {
+            position: relative;
+            &__number {
+              position: absolute;
+              top: -50%;
+              left: 50%;
+              width: 1.6rem;
+              height: 1.6rem;
+              display: inline-block;
+              background: $active-color;
+              color: $white;
+              border-radius: 100%;
+              line-height: 1.6rem;
+              text-align: center;
+            }
+          }
+          .search {
+            background-position: -4.5rem;
+          }
+          .burger {
+            background-position: -9rem;
+            display: none;
+          }
+        }
+      }
     }
   }
 }

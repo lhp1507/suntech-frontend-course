@@ -1,0 +1,21 @@
+.slider {
+  width: 100%;
+  #owl-my,
+  .owl-stage-outer,
+  .owl-stage {
+    max-height: 50rem;
+  }
+  .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+  #owl-my .item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  .owl-dots {
+    display: none;
+  }
+}
