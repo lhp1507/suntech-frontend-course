@@ -1,0 +1,39 @@
+.staticblocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-gray-bg;
+    padding: 5rem 0;
+    margin: 0 0.05rem;
+    .diamond {
+      background: url(../img/static-blocks/diamond.png) no-repeat center;
+      background-size: contain;
+    }
+    .plane {
+      background: url(../img/static-blocks/plane.png) no-repeat center;
+      background-size: contain;
+    }
+    .return {
+      background: url(../img/static-blocks/return.png) no-repeat center;
+      background-size: contain;
+    }
+    .rocket {
+      background: url(../img/static-blocks/rocket.png) no-repeat center;
+      background-size: contain;
+    }
+    .-subtitle {
+      text-transform: uppercase !important;
+      padding-top: 2rem !important;
+    }
+    .-small {
+      color: $gray-8-color !important;
+      font-family: "Droid-serif Regular" !important;
+      padding-top: 0.5rem !important;
+    }
+  }
+}

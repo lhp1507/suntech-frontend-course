@@ -28,11 +28,11 @@
         flex-direction: row;
         justify-content: space-between;
         .list__item {
+          position: relative;
           width: 24%;
           &-detail {
             .-img {
-              cursor: pointer;
-              width: auto;
+              width: 100%;
               height: 40rem;
             }
             .-name {
@@ -41,6 +41,34 @@
             .-price {
               margin-top: 0.5rem;
             }
+          }
+          &-hover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+            .-img {
+              background: url(../img/common/compare.png) no-repeat;
+              display: inline-block;
+              width: 4rem;
+              height: 4rem;
+            }
+            .cart {
+              border-top-left-radius: 1rem;
+              background-position: 0rem 0rem;
+            }
+            .like {
+              background-position: 0rem -5rem;
+              margin: 1rem 0;
+            }
+            .compare {
+              border-bottom-left-radius: 1rem;
+              background-position: 0rem -10rem;
+            }
+          }
+          &:hover .list__item-hover {
+            display: flex;
+            flex-direction: column;
           }
         }
       }

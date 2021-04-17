@@ -20,7 +20,7 @@
     &__dir {
       width: 60%;
       &-list {
-        padding: 0 15%;
+        padding: 0 10%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -39,12 +39,11 @@
         justify-content: flex-end;
         .list__item {
           margin-left: 2rem;
-          &-img {
+          .-img {
             background: url(../img/common/cart.png) no-repeat;
             display: inline-block;
             width: 1.6rem;
             height: 1.6rem;
-            cursor: pointer;
           }
           .cart {
             position: relative;
