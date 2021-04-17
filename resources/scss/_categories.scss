@@ -1,0 +1,33 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-blue-bg;
+    width: calc(100% / 3);
+    height: auto;
+    padding: 5rem 0;
+    .-icon {
+      width: 30rem !important;
+      height: 30rem !important;
+    }
+    .summerautumn {
+      background: url(../img/categories/summer-autumn.png) no-repeat center;
+      background-size: contain;
+    }
+    .discount {
+      background: url(../img/categories/30-discount.png) no-repeat center;
+      background-size: contain;
+    }
+    .newfashion {
+      background: url(../img/categories/new-fashion.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+  .--center {
+    background-color: $dark-gray-blue-bg !important;
+  }
+}

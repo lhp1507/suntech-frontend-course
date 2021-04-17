@@ -1,0 +1,74 @@
+.productslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 3rem;
+  &__title {
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        letter-spacing: 0.2rem;
+      }
+      small {
+        padding-top: 0.5rem;
+      }
+    }
+  }
+  &__products {
+    padding-top: 5rem;
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .list__item {
+        position: relative;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        width: 23%;
+        &-detail {
+          .-img {
+            width: 100%;
+            height: 40rem;
+          }
+          .-name {
+            margin-top: 2rem;
+          }
+          .-price {
+            margin-top: 0.5rem;
+          }
+        }
+        &-hover {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: none;
+          .-img {
+            background: url(../img/common/compare.png) no-repeat;
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+          }
+          .cart {
+            border-top-left-radius: 1rem;
+            background-position: 0rem 0rem;
+          }
+          .like {
+            background-position: 0rem -5rem;
+            margin: 1rem 0;
+          }
+          .compare {
+            border-bottom-left-radius: 1rem;
+            background-position: 0rem -10rem;
+          }
+        }
+        &:hover .list__item-hover {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

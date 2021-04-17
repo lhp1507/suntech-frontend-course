@@ -17,10 +17,8 @@
     <!-- <link rel="stylesheet" href="./resources/css/queries.css" /> -->
   </head>
   <body>
-    <!-- Phần menu -->
     <menu class="menu-container">
       <div class="menu">
-        <!-- Logo -->
         <div class="menu__logo">
           <h1>
             <a href="#" class="menu__logo-text --uppercase active"
@@ -28,49 +26,56 @@
             >
           </h1>
         </div>
-        <!-- Menu điều hướng -->
         <div class="menu__dir">
           <ul class="menu__dir-list">
             <li class="list__item">
               <a href="#" class="list__item-text active --uppercase">Home</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__item-text --uppercase">Women</a>
+              <a href="#bestseller" class="list__item-text --uppercase"
+                >Best sellers</a
+              >
             </li>
             <li class="list__item">
-              <a href="#" class="list__item-text --uppercase">Men</a>
+              <a href="#staticblocks" class="list__item-text --uppercase"
+                >Benefits</a
+              >
             </li>
             <li class="list__item">
-              <a href="#" class="list__item-text --uppercase">Kids</a>
+              <a href="#categories" class="list__item-text --uppercase"
+                >Collections</a
+              >
             </li>
             <li class="list__item">
-              <a href="#" class="list__item-text --uppercase">Jewellery</a>
+              <a href="#productslist" class="list__item-text --uppercase"
+                >Products</a
+              >
             </li>
             <li class="list__item">
-              <a href="#" class="list__item-text --uppercase">Accessories</a>
+              <a href="#subcribenclients" class="list__item-text --uppercase"
+                >Contact us</a
+              >
             </li>
           </ul>
         </div>
-        <!-- Phần giỏ hàng, tìm kiếm và mở menu -->
         <div class="menu__right">
           <ul class="menu__right-list">
             <li class="list__item">
-              <span class="list__item-img cart">
+              <span class="-img cart">
                 <small class="cart__number">3</small>
               </span>
             </li>
             <li class="list__item">
-              <span class="list__item-img search"></span>
+              <span class="-img search"></span>
             </li>
             <li class="list__item">
-              <span class="list__item-img burger"></span>
+              <span class="-img burger"></span>
             </li>
           </ul>
         </div>
       </div>
     </menu>
-    <!-- Phần slider -->
-    <slider class="slider">
+    <slider id="slider" class="slider">
       <div id="owl-my" class="owl-carousel owl-theme">
         <div class="item">
           <img src="./resources/img/slider/slider-1.jpg" alt="slider-1" />
@@ -89,10 +94,8 @@
         </div>
       </div>
     </slider>
-    <!-- Phần Best sellers -->
-    <best-seller class="bestseller-container">
+    <best-seller id="bestseller" class="bestseller-container">
       <div class="bestseller">
-        <!-- Title -->
         <div class="bestseller__title">
           <div class="bestseller__title-text">
             <h3 class="-title --uppercase">Best sellers</h3>
@@ -107,7 +110,6 @@
           <ul class="bestseller__products-list">
             <!-- 01 -->
             <li class="list__item">
-              <!-- Thông tin sản phẩm -->
               <div class="list__item-detail">
                 <img
                   src="./resources/img/best-sellers/best-seller-1.jpg"
@@ -121,16 +123,14 @@
                 >
                 <p class="-price">$250.00</p>
               </div>
-              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-              <div class="hover">
-                <span class="cart"></span>
-                <span class="like"></span>
-                <span class="compare"></span>
+              <div class="list__item-hover">
+                <span class="-img cart"></span>
+                <span class="-img like"></span>
+                <span class="-img compare"></span>
               </div>
             </li>
             <!-- 02 -->
             <li class="list__item">
-              <!-- Thông tin sản phẩm -->
               <div class="list__item-detail">
                 <img
                   src="./resources/img/best-sellers/best-seller-2.jpg"
@@ -144,16 +144,14 @@
                 >
                 <p class="-price">$250.00</p>
               </div>
-              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-              <div class="hover">
-                <span class="cart"></span>
-                <span class="like"></span>
-                <span class="compare"></span>
+              <div class="list__item-hover">
+                <span class="-img cart"></span>
+                <span class="-img like"></span>
+                <span class="-img compare"></span>
               </div>
             </li>
             <!-- 03 -->
             <li class="list__item">
-              <!-- Thông tin sản phẩm -->
               <div class="list__item-detail">
                 <img
                   src="./resources/img/best-sellers/best-seller-3.jpg"
@@ -167,16 +165,14 @@
                 >
                 <p class="-price">465.000 VND</p>
               </div>
-              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-              <div class="hover">
-                <span class="cart"></span>
-                <span class="like"></span>
-                <span class="compare"></span>
+              <div class="list__item-hover">
+                <span class="-img cart"></span>
+                <span class="-img like"></span>
+                <span class="-img compare"></span>
               </div>
             </li>
             <!-- 04 -->
             <li class="list__item">
-              <!-- Thông tin sản phẩm -->
               <div class="list__item-detail">
                 <img
                   src="./resources/img/best-sellers/best-seller-4.jpg"
@@ -190,295 +186,272 @@
                 >
                 <p class="-price">850.000 VND</p>
               </div>
-              <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-              <div class="hover">
-                <span class="cart"></span>
-                <span class="like"></span>
-                <span class="compare"></span>
+              <div class="list__item-hover">
+                <span class="-img cart"></span>
+                <span class="-img like"></span>
+                <span class="-img compare"></span>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </best-seller>
-    <!-- Static-blocks -->
-    <static-blocks class="static-blocks">
-      <div class="item">
-        <div class="special-offers">
-          <span class="diamond"></span>
-          <h3>Special Offers</h3>
-          <p>Shop Big Save Big</p>
-        </div>
+    <static-blocks id="staticblocks" class="staticblocks">
+      <div class="staticblocks__item">
+        <span class="-icon diamond"></span>
+        <h3 class="-subtitle">Special Offers</h3>
+        <p class="-small">Shop Big Save Big</p>
       </div>
-      <div class="item">
-        <div class="free-delivery">
-          <span class="plane"></span>
-          <h3>Free Delivery</h3>
-          <p>On Orders Above $99</p>
-        </div>
+      <div class="staticblocks__item">
+        <span class="-icon plane"></span>
+        <h3 class="-subtitle">Free Delivery</h3>
+        <p class="-small">On Orders Above $99</p>
       </div>
-      <div class="item">
-        <div class="return-policy">
-          <span class="return"></span>
-          <h3>30 Days Return</h3>
-          <p>Policy We Offers</p>
-        </div>
+      <div class="staticblocks__item">
+        <span class="-icon return"></span>
+        <h3 class="-subtitle">30 Days Return</h3>
+        <p class="-small">Policy We Offers</p>
       </div>
-      <div class="item">
-        <div class="fastest-shipping">
-          <span class="rocket"></span>
-          <h3>Fastest Shipping</h3>
-          <p>2 Days Express</p>
-        </div>
+      <div class="staticblocks__item">
+        <span class="-icon rocket"></span>
+        <h3 class="-subtitle">Fastest Shipping</h3>
+        <p class="-small">2 Days Express</p>
       </div>
     </static-blocks>
-    <!-- Categories 640px x 640px -->
-    <categories class="categories">
-      <div>
-        <span class="summer-autumn__image"></span>
+    <categories id="categories" class="categories">
+      <div class="categories__item">
+        <span class="-icon summerautumn"></span>
       </div>
-      <div class="center">
-        <span class="fashion-for-men__image"></span>
+      <div class="categories__item --center">
+        <span class="-icon discount"></span>
       </div>
-      <div>
-        <span class="new-fashion-styles__image"></span>
+      <div class="categories__item">
+        <span class="-icon newfashion"></span>
       </div>
     </categories>
-    <!-- Products List -->
-    <products-list class="products-list">
-      <div class="products-list__title">
-        <h3>Featured Products</h3>
-        <small>Newest trends from top brands</small>
+    <products-list id="productslist" class="productslist">
+      <div class="productslist__title">
+        <div class="productslist__title-text">
+          <h3 class="-title --uppercase">Featured Products</h3>
+          <small class="-small">Newest trends from top brands</small>
+        </div>
       </div>
-      <!-- ảnh: w x h = 300px x 450px -->
-      <div class="products-list__products">
-        <ul>
+      <div class="productslist__products">
+        <ul class="productslist__products-list">
           <!-- 01 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-1.jpg"
                 alt="future-product-1"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-1.jpg"
+                class="-name"
                 >Cruise Dual Analog</a
               >
-              <p class="price">$850.00</p>
+              <p class="-price">$850.00</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 02 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-2.jpg"
                 alt="future-product-2"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-2.jpg"
+                class="-name"
                 >Ananas x T-shirt</a
               >
-              <p class="price">450.000 VND</p>
+              <p class="-price">450.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 03 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-3.jpg"
                 alt="future-product-3"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-3.jpg"
+                class="-name"
                 >Ananas x T-shirt</a
               >
-              <p class="price">450.000 VND</p>
+              <p class="-price">450.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 04 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-4.jpg"
                 alt="future-product-4"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-4.jpg"
+                class="-name"
                 >Ananas x Hart</a
               >
-              <p class="price">300.000 VND</p>
+              <p class="-price">300.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 05 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-5.jpg"
                 alt="future-product-5"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-5.jpg"
+                class="-name"
                 >Ananas x T-shirt</a
               >
-              <p class="price">450.000 VND</p>
+              <p class="-price">450.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 06 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-6.jpg"
                 alt="future-product-6"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-6.jpg"
+                class="-name"
                 >Ananas x Sock</a
               >
-              <p class="price">50.000 VND</p>
+              <p class="-price">50.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 07 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-7.jpg"
                 alt="future-product-7"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-7.jpg"
+                class="-name"
                 >Ananas x T-shirt</a
               >
-              <p class="price">450.000 VND</p>
+              <p class="-price">450.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 08 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-8.jpg"
                 alt="future-product-8"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-8.jpg"
+                class="-name"
                 >Ananas x Hoodies</a
               >
-              <p class="price">950.000 VND</p>
+              <p class="-price">950.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 09 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-9.jpg"
                 alt="future-product-9"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-9.jpg"
+                class="-name"
                 >Ananas x Backpack</a
               >
-              <p class="price">450.000 VND</p>
+              <p class="-price">450.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__itemhover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
           <!-- 10 -->
-          <li>
-            <!-- Thông tin sản phẩm -->
-            <div class="detail">
+          <li class="list__item">
+            <div class="list__item-detail">
               <img
                 src="./resources/img/future-products/future-product-10.jpg"
                 alt="future-product-10"
+                class="-img"
               />
               <a
-                class="name"
                 href="./resources/img/future-products/future-product-10.jpg"
+                class="-name"
                 >Ananas x Tee</a
               >
-              <p class="price">25.000 VND</p>
+              <p class="-price">25.000 VND</p>
             </div>
-            <!-- Hover sẽ hiện ra thêm vào giỏ hàng, yêu thích, so sánh sản phẩm -->
-            <div class="hover">
-              <span class="cart"></span>
-              <span class="like"></span>
-              <span class="compare"></span>
+            <div class="list__item-hover">
+              <span class="-img cart"></span>
+              <span class="-img like"></span>
+              <span class="-img compare"></span>
             </div>
           </li>
         </ul>
       </div>
     </products-list>
-    <!-- Clients -->
-    <subcribe-clients class="subcribe-clients">
-      <!-- width 50% -->
+    <subcribe-clients id="subcribenclients" class="subcribenclients">
       <div class="subcribe">
         <h3>Get Out Special Discount</h3>
         <p>
@@ -499,7 +472,6 @@
           </button>
         </form>
       </div>
-      <!-- width 50% -->
       <div class="clients">
         <ul>
           <li><span class="brand-logo-1"></span></li>
@@ -509,8 +481,7 @@
         </ul>
       </div>
     </subcribe-clients>
-    <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="copyright-text">
         <p>
           Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios
