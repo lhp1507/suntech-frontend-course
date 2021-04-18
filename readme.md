@@ -1,7 +1,6 @@
-Project cuối khóa:
-tạo trang web như file shop.psd
+# suntech-frontend-course
 
-html
-css
-js
-responsive
+1. Result:
+   <img src="screencapture-index.png" width="100%">
+
+=============================================
