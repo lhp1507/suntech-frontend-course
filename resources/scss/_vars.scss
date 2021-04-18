@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Regular"),
+    url("../fonts/poppins/Poppins-Regular.woff") format("woff");
+}
+@font-face {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
@@ -40,6 +47,7 @@ $sz-h1: 2rem;
 $sz-price: 2rem;
 $sz-title: 3rem;
 $sz-subtitle: 1.8rem;
+$sz-text-25: 2.5rem;
 
 $white-bg: #fff;
 $black-bg: #000;

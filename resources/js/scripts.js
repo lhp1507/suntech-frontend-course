@@ -4,8 +4,8 @@ $(() => {
     // $(".menu__dir").toggleClass("active");
     $(".menu__dir").toggleClass("show");
   });
-  // Submit-btn:
-  $(".submit-btn").click(function () {
+  // form-submit:
+  $(".form-submit").click(function () {
     alert("Submitted! \nPlease check your email! Thank you!");
     var url = "https://github.com/lhp1507";
     window.open(url, "_blank"); //open in new tab

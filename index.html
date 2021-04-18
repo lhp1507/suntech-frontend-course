@@ -421,7 +421,7 @@
               >
               <p class="-price">450.000 VND</p>
             </div>
-            <div class="list__itemhover">
+            <div class="list__item-hover">
               <span class="-img cart"></span>
               <span class="-img like"></span>
               <span class="-img compare"></span>
@@ -452,49 +452,48 @@
       </div>
     </products-list>
     <subcribe-clients id="subcribenclients" class="subcribenclients">
-      <div class="subcribe">
-        <h3>Get Out Special Discount</h3>
-        <p>
+      <div class="subcribenclients__subcribe">
+        <h3 class="-title --uppercase">Get Out Special Discount</h3>
+        <p class="-text">
           Donec eu tristique felis. Duis augue mi, auctor ut purus et, dignissim
           aliquet quam. <br />
-          Register your email for news and special offers
+          Register your email for news and special offers.
         </p>
-        <form action="" method="" autocomplete="off">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail address..."
-            required
-          />
-          <button id="submit-btn" type="submit" class="submit-btn">
-            GET COUPON NOW
-          </button>
-        </form>
+        <div class="form-container">
+          <form action="" method="" autocomplete="off" class="form">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail address..."
+              required
+            />
+            <button type="submit" class="form-submit --uppercase">
+              Get coupon now
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="clients">
-        <ul>
-          <li><span class="brand-logo-1"></span></li>
-          <li><span class="brand-logo-2"></span></li>
-          <li><span class="brand-logo-3"></span></li>
-          <li><span class="brand-logo-4"></span></li>
-        </ul>
+      <div class="subcribenclients__clients">
+        <span class="-icon brand-logo-1"></span>
+        <span class="-icon brand-logo-2"></span>
+        <span class="-icon brand-logo-3"></span>
+        <span class="-icon brand-logo-4"></span>
       </div>
     </subcribe-clients>
     <footer id="footer" class="footer">
-      <div class="copyright-text">
-        <p>
+      <div class="footer__copyright">
+        <p class="-text">
           Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios
         </p>
       </div>
-      <div class="cards">
-        <ul>
-          <li><span class="visa"></span></li>
-          <li><span class="paypal"></span></li>
-          <li><span class="amazon"></span></li>
-          <li><span class="maestro"></span></li>
-          <li><span class="amex"></span></li>
-        </ul>
+      <div class="footer__payment">
+        <span class="-icon visa"></span>
+        <span class="-icon paypal"></span>
+        <span class="-icon amazon"></span>
+        <span class="-icon maestro"></span>
+        <span class="-icon amex"></span>
       </div>
     </footer>
     <script src="./vendors/js/jquery-3.5.1.min.js"></script>
