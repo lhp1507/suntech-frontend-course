@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $black-bg;
+  padding: 0rem 10rem;
+  &__copyright {
+    .-text {
+      color: $gray-8-color !important;
+    }
+  }
+  &__payment {
+    display: flex;
+    align-items: center;
+    .-icon {
+      margin: 0 0.5rem !important;
+    }
+    .visa {
+      background: url(../img/footer/visa.png) no-repeat center;
+      background-size: contain;
+    }
+    .paypal {
+      background: url(../img/footer/paypal.png) no-repeat center;
+      background-size: contain;
+    }
+    .amazon {
+      background: url(../img/footer/amazon.png) no-repeat center;
+      background-size: contain;
+    }
+    .maestro {
+      background: url(../img/footer/maestro.png) no-repeat center;
+      background-size: contain;
+    }
+    .amex {
+      background: url(../img/footer/amex.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
