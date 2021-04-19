@@ -1,15 +1,7 @@
 $(() => {
-  // Menu toggle:
+  // burger menu:
   $(".burger").click(function () {
-    // $(".menu__dir").toggleClass("active");
     $(".menu__dir").toggleClass("show");
-  });
-  // form-submit:
-  $(".form-submit").click(function () {
-    alert("Submitted! \nPlease check your email! Thank you!");
-    var url = "https://github.com/lhp1507";
-    window.open(url, "_blank"); //open in new tab
-    // document.location.href = url; // open in the same tab
   });
   //slider - owl carousel:
   $("#owl-my").owlCarousel({
@@ -22,5 +14,22 @@ $(() => {
     itemsDesktopSmall: false,
     itemsTablet: false,
     itemsMobile: false,
+  });
+  // form-submit:
+  $(".form-submit").click(function () {
+    alert("Submitted! \nPlease check your email! Thank you!");
+    var url = "https://github.com/lhp1507";
+    window.open(url, "_blank");
+  });
+  // back to top:
+  $(window).scroll(function () {
+    if ($(this).scrollTop()) {
+      $("#toTop").fadeIn();
+    } else {
+      $("#toTop").fadeOut();
+    }
+  });
+  $("#toTop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500, linear);
   });
 });
