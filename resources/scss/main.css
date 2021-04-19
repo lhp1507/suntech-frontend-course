@@ -365,6 +365,10 @@ a.active, a:hover {
   text-transform: uppercase;
 }
 
+.show {
+  display: block;
+}
+
 .menu-container {
   position: -webkit-sticky;
   position: sticky;
@@ -473,7 +477,6 @@ a.active, a:hover {
 
 .menu-container .menu__right-list .list__item .burger {
   background-position: -9rem;
-  display: none;
 }
 
 .slider {
@@ -1015,5 +1018,23 @@ a.active, a:hover {
 .footer__payment .amex {
   background: url(../img/footer/amex.png) no-repeat center;
   background-size: contain;
+}
+
+.backtotop__button {
+  font-size: 3rem !important;
+  padding: 0.5rem 1rem;
+  background: #3cb878 !important;
+  color: #fff !important;
+  opacity: 60%;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  display: none;
+}
+
+.backtotop__button:hover {
+  opacity: 1;
+  -webkit-transition: ease-in 0.25s;
+  transition: ease-in 0.25s;
 }
 /*# sourceMappingURL=main.css.map */

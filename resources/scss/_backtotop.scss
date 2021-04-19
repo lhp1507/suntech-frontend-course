@@ -1,0 +1,15 @@
+.backtotop__button {
+  font-size: $sz-totop !important;
+  padding: 0.5rem 1rem;
+  background: $active-color !important;
+  color: $white !important;
+  opacity: 60%;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  display: none;
+}
+.backtotop__button:hover {
+  opacity: 1;
+  transition: ease-in 0.25s;
+}
