@@ -21,7 +21,7 @@ $(() => {
     var url = "https://github.com/lhp1507";
     window.open(url, "_blank");
   });
-  // back to top:
+  // back to top
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $("#toTop").fadeIn();
@@ -30,6 +30,13 @@ $(() => {
     }
   });
   $("#toTop").click(function () {
+    $(".list__item-text").removeClass("active");
+    $(".list__item:first .list__item-text").addClass("active");
     $("html, body").animate({ scrollTop: 0 }, 500, linear);
+  });
+  // active menu when click
+  $(".list__item .list__item-text").click(function () {
+    $(".list__item-text").removeClass("active");
+    $(this).addClass("active");
   });
 });

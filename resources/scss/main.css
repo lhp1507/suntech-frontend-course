@@ -479,17 +479,17 @@ a.active, a:hover {
   background-position: -9rem;
 }
 
-.slider {
+.slider-container {
   width: 100%;
 }
 
-.slider #owl-my,
-.slider .owl-stage-outer,
-.slider .owl-stage {
+.slider-container #owl-my,
+.slider-container .owl-stage-outer,
+.slider-container .owl-stage {
   max-height: 50rem;
 }
 
-.slider .owl-carousel .owl-stage {
+.slider-container .owl-carousel .owl-stage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,14 +498,14 @@ a.active, a:hover {
           align-items: center;
 }
 
-.slider #owl-my .item img {
+.slider-container #owl-my .item img {
   display: block;
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
-.slider .owl-dots {
+.slider-container .owl-dots {
   display: none;
 }
 
@@ -550,6 +550,7 @@ a.active, a:hover {
 
 .bestseller-container .bestseller__title-text p {
   padding-top: 2rem;
+  word-break: break-all;
 }
 
 .bestseller-container .bestseller__products {
@@ -781,22 +782,15 @@ a.active, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin: 0 -1rem;
 }
 
 .productslist__products-list .list__item {
   position: relative;
-  margin-right: 2rem;
-  margin-bottom: 5rem;
-  width: 23%;
+  margin: 0 1rem 5rem 1rem;
+  width: calc( 25% - 2rem);
 }
 
 .productslist__products-list .list__item-detail .-img {
@@ -1021,8 +1015,8 @@ a.active, a:hover {
 }
 
 .backtotop__button {
-  font-size: 3rem !important;
-  padding: 0.5rem 1rem;
+  font-size: 2rem !important;
+  padding: 0.7rem 1rem;
   background: #3cb878 !important;
   color: #fff !important;
   opacity: 60%;
@@ -1030,11 +1024,26 @@ a.active, a:hover {
   bottom: 3%;
   right: 1%;
   display: none;
+  border-radius: 50%;
 }
 
 .backtotop__button:hover {
   opacity: 1;
   -webkit-transition: ease-in 0.25s;
   transition: ease-in 0.25s;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: thin solid slategrey;
 }
 /*# sourceMappingURL=main.css.map */

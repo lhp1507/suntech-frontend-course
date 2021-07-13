@@ -20,14 +20,14 @@
     padding-top: 5rem;
     &-list {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      margin: 0 -1rem; //Margin left right âm bằng margin giữa các item để đẩy width ra lại
       .list__item {
         position: relative;
-        margin-right: 2rem;
-        margin-bottom: 5rem;
-        width: 23%;
+        margin: 0 1rem 5rem 1rem;
+        width: calc(
+          25% - 2rem
+        ); // - 2rem đã margin left right giữa các item để width của item chia vừa đủ cho margin
         &-detail {
           .-img {
             width: 100%;
