@@ -479,17 +479,17 @@ a.active, a:hover {
   background-position: -9rem;
 }
 
-.slider-container {
+.slider {
   width: 100%;
 }
 
-.slider-container #owl-my,
-.slider-container .owl-stage-outer,
-.slider-container .owl-stage {
+.slider #owl-my,
+.slider .owl-stage-outer,
+.slider .owl-stage {
   max-height: 50rem;
 }
 
-.slider-container .owl-carousel .owl-stage {
+.slider .owl-carousel .owl-stage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,14 +498,14 @@ a.active, a:hover {
           align-items: center;
 }
 
-.slider-container #owl-my .item img {
+.slider #owl-my .item img {
   display: block;
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
-.slider-container .owl-dots {
+.slider .owl-dots {
   display: none;
 }
 
@@ -1016,7 +1016,7 @@ a.active, a:hover {
 
 .backtotop__button {
   font-size: 2rem !important;
-  padding: 0.7rem 1rem;
+  padding: 7.5px 11.25px;
   background: #3cb878 !important;
   color: #fff !important;
   opacity: 60%;
